@@ -1,0 +1,611 @@
+{
+  "metadata": {
+    "assignment": "Composio AI Product Ops Intern \u2014 100-App Agent-Readiness Research",
+    "version": "1.0.0",
+    "total_apps": 100,
+    "categories": 10,
+    "created_at": "2026-11-24"
+  },
+  "apps": [
+    {
+      "id": 1,
+      "name": "Salesforce",
+      "category": "CRM and Sales",
+      "seed_docs_url": "https://developer.salesforce.com/docs/apis"
+    },
+    {
+      "id": 2,
+      "name": "HubSpot",
+      "category": "CRM and Sales",
+      "seed_docs_url": "https://developers.hubspot.com/docs/api-reference/latest/overview"
+    },
+    {
+      "id": 3,
+      "name": "Pipedrive",
+      "category": "CRM and Sales",
+      "seed_docs_url": "https://pipedrive.readme.io/docs/getting-started"
+    },
+    {
+      "id": 4,
+      "name": "Attio",
+      "category": "CRM and Sales",
+      "seed_docs_url": "https://docs.attio.com/rest-api/overview"
+    },
+    {
+      "id": 5,
+      "name": "Twenty",
+      "category": "CRM and Sales",
+      "seed_docs_url": "https://docs.twenty.com/developers/extend/api"
+    },
+    {
+      "id": 6,
+      "name": "Podio",
+      "category": "CRM and Sales",
+      "seed_docs_url": "https://developers.podio.com/doc"
+    },
+    {
+      "id": 7,
+      "name": "Zoho CRM",
+      "category": "CRM and Sales",
+      "seed_docs_url": "https://www.zoho.com/crm/developer/docs/api/v8/"
+    },
+    {
+      "id": 8,
+      "name": "Close",
+      "category": "CRM and Sales",
+      "seed_docs_url": "https://developer.close.com/api/overview"
+    },
+    {
+      "id": 9,
+      "name": "Copper",
+      "category": "CRM and Sales",
+      "seed_docs_url": "https://developer.copper.com/introduction/authentication.html"
+    },
+    {
+      "id": 10,
+      "name": "DealCloud",
+      "category": "CRM and Sales",
+      "seed_docs_url": "https://api.docs.dealcloud.com/docs"
+    },
+    {
+      "id": 11,
+      "name": "Zendesk",
+      "category": "Support and Helpdesk",
+      "seed_docs_url": "https://developer.zendesk.com/api-reference/"
+    },
+    {
+      "id": 12,
+      "name": "Intercom",
+      "category": "Support and Helpdesk",
+      "seed_docs_url": "https://developers.intercom.com/docs"
+    },
+    {
+      "id": 13,
+      "name": "Freshdesk",
+      "category": "Support and Helpdesk",
+      "seed_docs_url": "https://developers.freshdesk.com/api/"
+    },
+    {
+      "id": 14,
+      "name": "Front",
+      "category": "Support and Helpdesk",
+      "seed_docs_url": "https://dev.frontapp.com/reference/introduction"
+    },
+    {
+      "id": 15,
+      "name": "Pylon",
+      "category": "Support and Helpdesk",
+      "seed_docs_url": "https://docs.usepylon.com/pylon-docs/developer/api"
+    },
+    {
+      "id": 16,
+      "name": "LiveAgent",
+      "category": "Support and Helpdesk",
+      "seed_docs_url": "https://support.liveagent.com/docs/api/v3/"
+    },
+    {
+      "id": 17,
+      "name": "Plain",
+      "category": "Support and Helpdesk",
+      "seed_docs_url": "https://www.plain.com/docs/graphql/introduction"
+    },
+    {
+      "id": 18,
+      "name": "Help Scout",
+      "category": "Support and Helpdesk",
+      "seed_docs_url": "https://developer.helpscout.com/"
+    },
+    {
+      "id": 19,
+      "name": "Gorgias",
+      "category": "Support and Helpdesk",
+      "seed_docs_url": "https://developers.gorgias.com/"
+    },
+    {
+      "id": 20,
+      "name": "Gladly",
+      "category": "Support and Helpdesk",
+      "seed_docs_url": "https://developer.gladly.com/rest/"
+    },
+    {
+      "id": 21,
+      "name": "Slack",
+      "category": "Communications and Messaging",
+      "seed_docs_url": "https://docs.slack.dev/"
+    },
+    {
+      "id": 22,
+      "name": "Twilio",
+      "category": "Communications and Messaging",
+      "seed_docs_url": "https://www.twilio.com/docs"
+    },
+    {
+      "id": 23,
+      "name": "Zoho Cliq",
+      "category": "Communications and Messaging",
+      "seed_docs_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+    },
+    {
+      "id": 24,
+      "name": "Lark",
+      "category": "Communications and Messaging",
+      "seed_docs_url": "https://open.larksuite.com/"
+    },
+    {
+      "id": 25,
+      "name": "Pumble",
+      "category": "Communications and Messaging",
+      "seed_docs_url": "https://pumble-api-keys.addons.marketplace.cake.com/api-docs/"
+    },
+    {
+      "id": 26,
+      "name": "Discord",
+      "category": "Communications and Messaging",
+      "seed_docs_url": "https://docs.discord.com/developers/intro"
+    },
+    {
+      "id": 27,
+      "name": "Telegram",
+      "category": "Communications and Messaging",
+      "seed_docs_url": "https://core.telegram.org/bots/api"
+    },
+    {
+      "id": 28,
+      "name": "WhatsApp Business",
+      "category": "Communications and Messaging",
+      "seed_docs_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started"
+    },
+    {
+      "id": 29,
+      "name": "Aircall",
+      "category": "Communications and Messaging",
+      "seed_docs_url": "https://developer.aircall.io/"
+    },
+    {
+      "id": 30,
+      "name": "Vonage",
+      "category": "Communications and Messaging",
+      "seed_docs_url": "https://developer.vonage.com/en/home"
+    },
+    {
+      "id": 31,
+      "name": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "seed_docs_url": "https://developers.google.com/google-ads/api/docs/get-started/make-first-call"
+    },
+    {
+      "id": 32,
+      "name": "Meta Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "seed_docs_url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api"
+    },
+    {
+      "id": 33,
+      "name": "LinkedIn Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "seed_docs_url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview?view=li-lms-2026-10"
+    },
+    {
+      "id": 34,
+      "name": "GoHighLevel",
+      "category": "Marketing, Ads, Email and Social",
+      "seed_docs_url": "https://marketplace.gohighlevel.com/docs/"
+    },
+    {
+      "id": 35,
+      "name": "Mailchimp",
+      "category": "Marketing, Ads, Email and Social",
+      "seed_docs_url": "https://mailchimp.com/developer/marketing"
+    },
+    {
+      "id": 36,
+      "name": "Klaviyo",
+      "category": "Marketing, Ads, Email and Social",
+      "seed_docs_url": "https://developers.klaviyo.com/en/reference/api_overview"
+    },
+    {
+      "id": 37,
+      "name": "systeme.io",
+      "category": "Marketing, Ads, Email and Social",
+      "seed_docs_url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io"
+    },
+    {
+      "id": 38,
+      "name": "Pinterest",
+      "category": "Marketing, Ads, Email and Social",
+      "seed_docs_url": "https://developers.pinterest.com/docs/api/v5/introduction/?"
+    },
+    {
+      "id": 39,
+      "name": "Threads",
+      "category": "Marketing, Ads, Email and Social",
+      "seed_docs_url": "https://developers.facebook.com/documentation/threads"
+    },
+    {
+      "id": 40,
+      "name": "SendGrid",
+      "category": "Marketing, Ads, Email and Social",
+      "seed_docs_url": "https://www.twilio.com/docs/sendgrid/api-reference"
+    },
+    {
+      "id": 41,
+      "name": "Shopify",
+      "category": "Ecommerce",
+      "seed_docs_url": "https://shopify.dev/docs/api"
+    },
+    {
+      "id": 42,
+      "name": "WooCommerce",
+      "category": "Ecommerce",
+      "seed_docs_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+    },
+    {
+      "id": 43,
+      "name": "BigCommerce",
+      "category": "Ecommerce",
+      "seed_docs_url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis"
+    },
+    {
+      "id": 44,
+      "name": "Salesforce Commerce Cloud",
+      "category": "Ecommerce",
+      "seed_docs_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/scapi-get-started.html"
+    },
+    {
+      "id": 45,
+      "name": "Magento",
+      "category": "Ecommerce",
+      "seed_docs_url": "https://developer.adobe.com/commerce/webapi/"
+    },
+    {
+      "id": 46,
+      "name": "Squarespace",
+      "category": "Ecommerce",
+      "seed_docs_url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions"
+    },
+    {
+      "id": 47,
+      "name": "Ecwid",
+      "category": "Ecommerce",
+      "seed_docs_url": "https://docs.ecwid.com/api-reference"
+    },
+    {
+      "id": 48,
+      "name": "Gumroad",
+      "category": "Ecommerce",
+      "seed_docs_url": "https://gumroad.com/api"
+    },
+    {
+      "id": 49,
+      "name": "Amazon Selling Partner",
+      "category": "Ecommerce",
+      "seed_docs_url": "https://developer-docs.amazon.com/sp-api/"
+    },
+    {
+      "id": 50,
+      "name": "Fanbasis",
+      "category": "Ecommerce",
+      "seed_docs_url": "https://commasdocs.com/"
+    },
+    {
+      "id": 51,
+      "name": "DataForSEO",
+      "category": "Data, SEO and Scraping",
+      "seed_docs_url": "https://docs.dataforseo.com/v3/"
+    },
+    {
+      "id": 52,
+      "name": "SE Ranking",
+      "category": "Data, SEO and Scraping",
+      "seed_docs_url": "https://seranking.com/api/data/getting-started/"
+    },
+    {
+      "id": 53,
+      "name": "Ahrefs",
+      "category": "Data, SEO and Scraping",
+      "seed_docs_url": "https://docs.ahrefs.com/en/api/docs/introduction"
+    },
+    {
+      "id": 54,
+      "name": "MrScraper",
+      "category": "Data, SEO and Scraping",
+      "seed_docs_url": "https://docs.mrscraper.com/"
+    },
+    {
+      "id": 55,
+      "name": "Apify",
+      "category": "Data, SEO and Scraping",
+      "seed_docs_url": "https://docs.apify.com/api/v2"
+    },
+    {
+      "id": 56,
+      "name": "Firecrawl",
+      "category": "Data, SEO and Scraping",
+      "seed_docs_url": "https://docs.firecrawl.dev/api-reference/v2-introduction"
+    },
+    {
+      "id": 57,
+      "name": "Bright Data",
+      "category": "Data, SEO and Scraping",
+      "seed_docs_url": "https://docs.brightdata.com/api-reference/authentication"
+    },
+    {
+      "id": 58,
+      "name": "Sherlock",
+      "category": "Data, SEO and Scraping",
+      "seed_docs_url": "https://github.com/sherlock-project/sherlock"
+    },
+    {
+      "id": 59,
+      "name": "Waterfall.io",
+      "category": "Data, SEO and Scraping",
+      "seed_docs_url": "https://docs.waterfall.io/v1/introduction"
+    },
+    {
+      "id": 60,
+      "name": "Clay",
+      "category": "Data, SEO and Scraping",
+      "seed_docs_url": "https://developers.clay.com/"
+    },
+    {
+      "id": 61,
+      "name": "GitHub",
+      "category": "Developer, Infra and Data Platforms",
+      "seed_docs_url": "https://docs.github.com/en/rest"
+    },
+    {
+      "id": 62,
+      "name": "Vercel",
+      "category": "Developer, Infra and Data Platforms",
+      "seed_docs_url": "https://vercel.com/docs/rest-api"
+    },
+    {
+      "id": 63,
+      "name": "Netlify",
+      "category": "Developer, Infra and Data Platforms",
+      "seed_docs_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/"
+    },
+    {
+      "id": 64,
+      "name": "Cloudflare",
+      "category": "Developer, Infra and Data Platforms",
+      "seed_docs_url": "https://developers.cloudflare.com/api/"
+    },
+    {
+      "id": 65,
+      "name": "Supabase",
+      "category": "Developer, Infra and Data Platforms",
+      "seed_docs_url": "https://supabase.com/docs/reference/api/introduction"
+    },
+    {
+      "id": 66,
+      "name": "Neo4j",
+      "category": "Developer, Infra and Data Platforms",
+      "seed_docs_url": "https://neo4j.com/docs/aura/api/overview/"
+    },
+    {
+      "id": 67,
+      "name": "Snowflake",
+      "category": "Developer, Infra and Data Platforms",
+      "seed_docs_url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication"
+    },
+    {
+      "id": 68,
+      "name": "MongoDB Atlas",
+      "category": "Developer, Infra and Data Platforms",
+      "seed_docs_url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2"
+    },
+    {
+      "id": 69,
+      "name": "Datadog",
+      "category": "Developer, Infra and Data Platforms",
+      "seed_docs_url": "https://docs.datadoghq.com/api/latest/"
+    },
+    {
+      "id": 70,
+      "name": "Sentry",
+      "category": "Developer, Infra and Data Platforms",
+      "seed_docs_url": "https://docs.sentry.io/api/"
+    },
+    {
+      "id": 71,
+      "name": "Notion",
+      "category": "Productivity and Project Management",
+      "seed_docs_url": "https://developers.notion.com/reference/intro"
+    },
+    {
+      "id": 72,
+      "name": "Airtable",
+      "category": "Productivity and Project Management",
+      "seed_docs_url": "https://airtable.com/developers/web/api/introduction"
+    },
+    {
+      "id": 73,
+      "name": "Linear",
+      "category": "Productivity and Project Management",
+      "seed_docs_url": "https://linear.app/developers/graphql"
+    },
+    {
+      "id": 74,
+      "name": "Jira",
+      "category": "Productivity and Project Management",
+      "seed_docs_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+    },
+    {
+      "id": 75,
+      "name": "Asana",
+      "category": "Productivity and Project Management",
+      "seed_docs_url": "https://developers.asana.com/docs/authentication"
+    },
+    {
+      "id": 76,
+      "name": "Monday.com",
+      "category": "Productivity and Project Management",
+      "seed_docs_url": "https://developer.monday.com/api-reference/docs/basics"
+    },
+    {
+      "id": 77,
+      "name": "ClickUp",
+      "category": "Productivity and Project Management",
+      "seed_docs_url": "https://developer.clickup.com/"
+    },
+    {
+      "id": 78,
+      "name": "Coda",
+      "category": "Productivity and Project Management",
+      "seed_docs_url": "https://coda.io/developers"
+    },
+    {
+      "id": 79,
+      "name": "Smartsheet",
+      "category": "Productivity and Project Management",
+      "seed_docs_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+    },
+    {
+      "id": 80,
+      "name": "Harvest",
+      "category": "Productivity and Project Management",
+      "seed_docs_url": "https://help.getharvest.com/api-v2/"
+    },
+    {
+      "id": 81,
+      "name": "Stripe",
+      "category": "Finance and Fintech",
+      "seed_docs_url": "https://docs.stripe.com/api"
+    },
+    {
+      "id": 82,
+      "name": "Plaid",
+      "category": "Finance and Fintech",
+      "seed_docs_url": "https://plaid.com/docs/api/"
+    },
+    {
+      "id": 83,
+      "name": "Binance",
+      "category": "Finance and Fintech",
+      "seed_docs_url": "https://developers.binance.com/en/docs/products/spot/rest-api"
+    },
+    {
+      "id": 84,
+      "name": "Paygent Connect",
+      "category": "Finance and Fintech",
+      "seed_docs_url": "https://www.gopaygent.com/developers/docs"
+    },
+    {
+      "id": 85,
+      "name": "iPayX",
+      "category": "Finance and Fintech",
+      "seed_docs_url": "https://www.ipayx.ai/docs/mcp-server"
+    },
+    {
+      "id": 86,
+      "name": "QuickBooks",
+      "category": "Finance and Fintech",
+      "seed_docs_url": "https://developer.intuit.com/app/developer/qbo/docs/develop"
+    },
+    {
+      "id": 87,
+      "name": "Xero",
+      "category": "Finance and Fintech",
+      "seed_docs_url": "https://developer.xero.com/documentation/getting-started-guide/"
+    },
+    {
+      "id": 88,
+      "name": "Brex",
+      "category": "Finance and Fintech",
+      "seed_docs_url": "https://developer.brex.com/"
+    },
+    {
+      "id": 89,
+      "name": "Ramp",
+      "category": "Finance and Fintech",
+      "seed_docs_url": "https://docs.ramp.com/developer-api/v1"
+    },
+    {
+      "id": 90,
+      "name": "PitchBook",
+      "category": "Finance and Fintech",
+      "seed_docs_url": "https://pitchbook.com/products/direct-access-data/api"
+    },
+    {
+      "id": 91,
+      "name": "NotebookLM",
+      "category": "AI, Research and Media-native",
+      "seed_docs_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+    },
+    {
+      "id": 92,
+      "name": "Otter AI",
+      "category": "AI, Research and Media-native",
+      "seed_docs_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+    },
+    {
+      "id": 93,
+      "name": "Fathom",
+      "category": "AI, Research and Media-native",
+      "seed_docs_url": "https://developers.fathom.ai/api-overview"
+    },
+    {
+      "id": 94,
+      "name": "Consensus",
+      "category": "AI, Research and Media-native",
+      "seed_docs_url": "https://docs.consensus.app/api-get-started"
+    },
+    {
+      "id": 95,
+      "name": "Reducto",
+      "category": "AI, Research and Media-native",
+      "seed_docs_url": "https://docs.reducto.ai/quickstart"
+    },
+    {
+      "id": 96,
+      "name": "Devin",
+      "category": "AI, Research and Media-native",
+      "seed_docs_url": "https://docs.devin.ai/api-reference/overview"
+    },
+    {
+      "id": 97,
+      "name": "Higgsfield",
+      "category": "AI, Research and Media-native",
+      "seed_docs_url": "https://docs.higgsfield.ai/"
+    },
+    {
+      "id": 98,
+      "name": "Mermaid CLI",
+      "category": "AI, Research and Media-native",
+      "seed_docs_url": "https://github.com/mermaid-js/mermaid-cli"
+    },
+    {
+      "id": 99,
+      "name": "YouTube Transcript",
+      "category": "AI, Research and Media-native",
+      "seed_docs_url": "https://github.com/jdepoix/youtube-transcript-api"
+    },
+    {
+      "id": 100,
+      "name": "Grain",
+      "category": "AI, Research and Media-native",
+      "seed_docs_url": "https://developers.grain.com/"
+    }
+  ]
+}

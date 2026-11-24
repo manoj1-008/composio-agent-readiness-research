@@ -1,0 +1,43 @@
+pipeline:
+  name: "composio-agent-readiness-research"
+  version: "1.0.0"
+  research_date: "2026-11-24"
+  concurrency_limit: 5
+  http_timeout_seconds: 20
+  max_retries: 2
+  checkpoint_db: "data/checkpoints.sqlite"
+  evidence_log: "data/evidence.jsonl"
+  replay_log: "data/replay_log.jsonl"
+  http_retrieval_log: "data/http_retrieval_log.jsonl"
+  output_apps_json: "data/researched_apps.json"
+  audit_sample_json: "data/audit_sample.json"
+  findings_json: "data/findings.json"
+  report_html: "reports/index.html"
+
+providers:
+  llm:
+    primary: "google-genai"
+    model: "gemini-2.5-flash"
+    structured_output: true
+  composio:
+    sdk_package: "composio>=0.34.0"
+    gemini_provider_package: "composio-gemini"
+    mcp_gateway_url: "https://connect.composio.dev/mcp"
+    mode: "provider_abstraction_with_live_tool_verification"
+  search:
+    provider: "serper_or_google_cse_or_duckduckgo"
+    browser_fallback: "playwright_optional"
+
+verification:
+  min_evidence_urls_per_app: 2
+  require_auth_evidence_for_known_auth: true
+  require_pricing_or_access_evidence: true
+  stratified_audit_per_category: 2
+  evaluated_fields:
+    - "auth_methods"
+    - "credential_acquisition"
+    - "api_availability"
+    - "api_breadth"
+    - "mcp_status"
+    - "composio_integration"
+    - "buildability"

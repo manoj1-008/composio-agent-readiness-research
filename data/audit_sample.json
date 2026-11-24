@@ -1,0 +1,1716 @@
+{
+  "audit_metadata": {
+    "audited_at": "2026-11-24",
+    "sample_size": 20,
+    "stratification": "2 applications per category across all 10 categories",
+    "evaluated_fields": [
+      "auth_methods",
+      "credential_acquisition",
+      "api_availability",
+      "api_breadth",
+      "mcp_status",
+      "composio_integration",
+      "buildability"
+    ],
+    "denominator_rule": "Accuracy = Correct evaluated fields / Total evaluated fields (20 x 7 = 140). Unverified/Unknown fields are never counted as correct."
+  },
+  "audit_summary": {
+    "false_positives": 4,
+    "false_negatives": 1,
+    "notes": "All Pass 1, Post-Validation (Pass 2+3), and Final Audited accuracies are computed programmatically from field_results. False positives (4): Pylon buildability, Amazon SP-API Official MCP, Amazon SP-API Composio toolkit, and Fanbasis Pass 2 root-URL heuristic. False negative (1): Amazon SP-API non-canonical TLD."
+  },
+  "entries": [
+    {
+      "app_id": 9,
+      "app_name": "Copper",
+      "category": "CRM and Sales",
+      "official_docs_checked": [
+        "https://developer.copper.com/introduction/authentication.html",
+        "https://support.copper.com/en/articles/8823462-api-docs-and-tips",
+        "https://www.copper.com/mcp"
+      ],
+      "overall_verdict": "Correct",
+      "field_results": [
+        {
+          "field_name": "auth_methods",
+          "original_value": "OAuth 2.0, API key",
+          "post_validation_value": "OAuth 2.0, API key",
+          "audited_value": "OAuth 2.0, API key",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Confirmed on developer.copper.com"
+        },
+        {
+          "field_name": "credential_acquisition",
+          "original_value": "Paid-plan required",
+          "post_validation_value": "Paid-plan required",
+          "audited_value": "Paid-plan required",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Production API excluded from Basic; requires Professional/Business"
+        },
+        {
+          "field_name": "api_availability",
+          "original_value": "REST",
+          "post_validation_value": "REST",
+          "audited_value": "REST",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "REST JSON API"
+        },
+        {
+          "field_name": "api_breadth",
+          "original_value": "Medium",
+          "post_validation_value": "Medium",
+          "audited_value": "Medium",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Core CRM objects, pipelines, custom fields, webhooks"
+        },
+        {
+          "field_name": "mcp_status",
+          "original_value": "Official",
+          "post_validation_value": "Official",
+          "audited_value": "Official",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Official beta MCP waitlist at copper.com/mcp"
+        },
+        {
+          "field_name": "composio_integration",
+          "original_value": "true",
+          "post_validation_value": "true",
+          "audited_value": "true",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Verified at composio.dev/toolkits/copper"
+        },
+        {
+          "field_name": "buildability",
+          "original_value": "Buildable with limitations",
+          "post_validation_value": "Buildable with limitations",
+          "audited_value": "Buildable with limitations",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Plan gating + read-only waitlist beta MCP"
+        }
+      ],
+      "discrepancy_summary": "No field-level discrepancies.",
+      "final_corrected_conclusion": "Confirmed Buildable with limitations; production REST API requires Professional+ paid tier."
+    },
+    {
+      "app_id": 10,
+      "app_name": "DealCloud",
+      "category": "CRM and Sales",
+      "official_docs_checked": [
+        "https://api.docs.dealcloud.com/docs",
+        "https://api.docs.dealcloud.com/docs/token",
+        "https://api.docs.dealcloud.com/mcp"
+      ],
+      "overall_verdict": "Correct",
+      "field_results": [
+        {
+          "field_name": "auth_methods",
+          "original_value": "OAuth 2.0, API key",
+          "post_validation_value": "OAuth 2.0, API key",
+          "audited_value": "OAuth 2.0, API key",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "OAuth2 Bearer token + API key/secret"
+        },
+        {
+          "field_name": "credential_acquisition",
+          "original_value": "Enterprise-only",
+          "post_validation_value": "Enterprise-only",
+          "audited_value": "Enterprise-only",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Requires Intapp enterprise DealCloud tenant"
+        },
+        {
+          "field_name": "api_availability",
+          "original_value": "REST",
+          "post_validation_value": "REST",
+          "audited_value": "REST",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "REST API + Python/C# SDKs"
+        },
+        {
+          "field_name": "api_breadth",
+          "original_value": "Large",
+          "post_validation_value": "Large",
+          "audited_value": "Large",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Schema, data, bulk export, reports, users, publications"
+        },
+        {
+          "field_name": "mcp_status",
+          "original_value": "Official",
+          "post_validation_value": "Official",
+          "audited_value": "Official",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Official read-only DealCloud MCP at api.docs.dealcloud.com/mcp"
+        },
+        {
+          "field_name": "composio_integration",
+          "original_value": "false",
+          "post_validation_value": "false",
+          "audited_value": "false",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "No Composio toolkit"
+        },
+        {
+          "field_name": "buildability",
+          "original_value": "Partner / enterprise dependent",
+          "post_validation_value": "Partner / enterprise dependent",
+          "audited_value": "Partner / enterprise dependent",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Requires enterprise tenant provisioning"
+        }
+      ],
+      "discrepancy_summary": "No field-level discrepancies.",
+      "final_corrected_conclusion": "Confirmed Partner / enterprise dependent despite public API documentation."
+    },
+    {
+      "app_id": 15,
+      "app_name": "Pylon",
+      "category": "Support and Helpdesk",
+      "official_docs_checked": [
+        "https://www.usepylon.com/pylon-facts",
+        "https://www.usepylon.com/pricing",
+        "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp"
+      ],
+      "overall_verdict": "Partially correct",
+      "field_results": [
+        {
+          "field_name": "auth_methods",
+          "original_value": "API key, OAuth 2.0",
+          "post_validation_value": "API key, OAuth 2.0",
+          "audited_value": "API key, OAuth 2.0",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Confirmed in Pylon API & MCP docs"
+        },
+        {
+          "field_name": "credential_acquisition",
+          "original_value": "Partner / contact-sales gated",
+          "post_validation_value": "Partner / contact-sales gated",
+          "audited_value": "Partner / contact-sales gated",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "usepylon.com/pylon-facts confirms free trials require a sales rep and no free plan exists"
+        },
+        {
+          "field_name": "api_availability",
+          "original_value": "REST",
+          "post_validation_value": "REST",
+          "audited_value": "REST",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "US and EU REST endpoints"
+        },
+        {
+          "field_name": "api_breadth",
+          "original_value": "Large",
+          "post_validation_value": "Large",
+          "audited_value": "Large",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "20+ B2B support object families"
+        },
+        {
+          "field_name": "mcp_status",
+          "original_value": "Official",
+          "post_validation_value": "Official",
+          "audited_value": "Official",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Hosted US/EU MCP servers"
+        },
+        {
+          "field_name": "composio_integration",
+          "original_value": "true",
+          "post_validation_value": "true",
+          "audited_value": "true",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "pylon_mcp toolkit verified"
+        },
+        {
+          "field_name": "buildability",
+          "original_value": "Buildable with limitations",
+          "post_validation_value": "Buildable with limitations",
+          "audited_value": "Partner / enterprise dependent",
+          "pass1_verdict": "Incorrect",
+          "pass2_verdict": "Incorrect",
+          "final_verdict": "Correct",
+          "note": "Pass 1 over-optimistically rated Buildable with limitations despite sales-gated trial & annual minimum-seat contracts (False Positive)."
+        }
+      ],
+      "discrepancy_summary": "Pass 1 misclassified buildability as 'Buildable with limitations' even though credential acquisition is sales-gated with no self-service sandbox.",
+      "final_corrected_conclusion": "Corrected buildability from 'Buildable with limitations' to 'Partner / enterprise dependent'."
+    },
+    {
+      "app_id": 17,
+      "app_name": "Plain",
+      "category": "Support and Helpdesk",
+      "official_docs_checked": [
+        "https://www.plain.com/docs/graphql/introduction",
+        "https://www.plain.com/docs/integrations/mcp-server",
+        "https://www.plain.com/pricing"
+      ],
+      "overall_verdict": "Correct",
+      "field_results": [
+        {
+          "field_name": "auth_methods",
+          "original_value": "API key, OAuth 2.0",
+          "post_validation_value": "API key, OAuth 2.0",
+          "audited_value": "API key, OAuth 2.0",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "API keys + OAuth2 for hosted MCP"
+        },
+        {
+          "field_name": "credential_acquisition",
+          "original_value": "Free trial",
+          "post_validation_value": "Free trial",
+          "audited_value": "Free trial",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "7-day no-CC free trial"
+        },
+        {
+          "field_name": "api_availability",
+          "original_value": "GraphQL",
+          "post_validation_value": "GraphQL",
+          "audited_value": "GraphQL",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "GraphQL-only public API"
+        },
+        {
+          "field_name": "api_breadth",
+          "original_value": "Large",
+          "post_validation_value": "Large",
+          "audited_value": "Large",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Full UI parity + ~400 MCP tools"
+        },
+        {
+          "field_name": "mcp_status",
+          "original_value": "Official",
+          "post_validation_value": "Official",
+          "audited_value": "Official",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Hosted mcp.plain.com/mcp"
+        },
+        {
+          "field_name": "composio_integration",
+          "original_value": "true",
+          "post_validation_value": "true",
+          "audited_value": "true",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "plain_mcp verified"
+        },
+        {
+          "field_name": "buildability",
+          "original_value": "Ready to build",
+          "post_validation_value": "Ready to build",
+          "audited_value": "Ready to build",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Self-serve trial + strong GraphQL/MCP"
+        }
+      ],
+      "discrepancy_summary": "No field-level discrepancies.",
+      "final_corrected_conclusion": "Confirmed Ready to build via GraphQL API and hosted MCP."
+    },
+    {
+      "app_id": 24,
+      "app_name": "Lark",
+      "category": "Communications and Messaging",
+      "official_docs_checked": [
+        "https://open.larksuite.com/document/server-docs/getting-started/server-api-list?from=home",
+        "https://github.com/larksuite/lark-openapi-mcp"
+      ],
+      "overall_verdict": "Correct",
+      "field_results": [
+        {
+          "field_name": "auth_methods",
+          "original_value": "OAuth 2.0, Other / custom authentication",
+          "post_validation_value": "OAuth 2.0, Other / custom authentication",
+          "audited_value": "OAuth 2.0, Other / custom authentication",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "OAuth user tokens + tenant/app access tokens"
+        },
+        {
+          "field_name": "credential_acquisition",
+          "original_value": "Admin approval required",
+          "post_validation_value": "Admin approval required",
+          "audited_value": "Admin approval required",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Tenant admin approval required for scopes & publishing"
+        },
+        {
+          "field_name": "api_availability",
+          "original_value": "REST",
+          "post_validation_value": "REST",
+          "audited_value": "REST",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "REST Server APIs"
+        },
+        {
+          "field_name": "api_breadth",
+          "original_value": "Large",
+          "post_validation_value": "Large",
+          "audited_value": "Large",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "IM, Docs, Sheets, Calendar, Approvals, Mail"
+        },
+        {
+          "field_name": "mcp_status",
+          "original_value": "Official",
+          "post_validation_value": "Official",
+          "audited_value": "Official",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Official larksuite/lark-openapi-mcp"
+        },
+        {
+          "field_name": "composio_integration",
+          "original_value": "true",
+          "post_validation_value": "true",
+          "audited_value": "true",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "lark toolkit verified"
+        },
+        {
+          "field_name": "buildability",
+          "original_value": "Buildable with limitations",
+          "post_validation_value": "Buildable with limitations",
+          "audited_value": "Buildable with limitations",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Admin scope gating + Lark/Feishu regional split"
+        }
+      ],
+      "discrepancy_summary": "No field-level discrepancies.",
+      "final_corrected_conclusion": "Confirmed Buildable with limitations."
+    },
+    {
+      "app_id": 25,
+      "app_name": "Pumble",
+      "category": "Communications and Messaging",
+      "official_docs_checked": [
+        "https://pumble-api-keys.addons.marketplace.cake.com/api-docs/",
+        "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/"
+      ],
+      "overall_verdict": "Correct",
+      "field_results": [
+        {
+          "field_name": "auth_methods",
+          "original_value": "API key, Other / custom authentication",
+          "post_validation_value": "API key, Other / custom authentication",
+          "audited_value": "API key, Other / custom authentication",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "API key addon + MCP x-app-token"
+        },
+        {
+          "field_name": "credential_acquisition",
+          "original_value": "Free self-service",
+          "post_validation_value": "Free self-service",
+          "audited_value": "Free self-service",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Free workspace supports up to 3 addons"
+        },
+        {
+          "field_name": "api_availability",
+          "original_value": "REST",
+          "post_validation_value": "REST",
+          "audited_value": "REST",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "REST API Keys addon"
+        },
+        {
+          "field_name": "api_breadth",
+          "original_value": "Small",
+          "post_validation_value": "Small",
+          "audited_value": "Small",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "~26 endpoints across 4 resource groups"
+        },
+        {
+          "field_name": "mcp_status",
+          "original_value": "Official",
+          "post_validation_value": "Official",
+          "audited_value": "Official",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Hosted mcp.pumble.com/mcp"
+        },
+        {
+          "field_name": "composio_integration",
+          "original_value": "true",
+          "post_validation_value": "true",
+          "audited_value": "true",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "pumble toolkit verified"
+        },
+        {
+          "field_name": "buildability",
+          "original_value": "Buildable with limitations",
+          "post_validation_value": "Buildable with limitations",
+          "audited_value": "Buildable with limitations",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Narrow API surface and no OAuth on API Keys addon"
+        }
+      ],
+      "discrepancy_summary": "No field-level discrepancies.",
+      "final_corrected_conclusion": "Confirmed Buildable with limitations."
+    },
+    {
+      "app_id": 31,
+      "app_name": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "official_docs_checked": [
+        "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+        "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+        "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"
+      ],
+      "overall_verdict": "Partially correct",
+      "field_results": [
+        {
+          "field_name": "auth_methods",
+          "original_value": "OAuth 2.0, JWT / service account",
+          "post_validation_value": "OAuth 2.0, JWT / service account",
+          "audited_value": "OAuth 2.0, JWT / service account, API key",
+          "pass1_verdict": "Partially correct",
+          "pass2_verdict": "Partially correct",
+          "final_verdict": "Correct",
+          "note": "Pass 1 omitted the mandatory Developer Token / GCP quota credential nuance alongside OAuth 2.0 (docs updated Nov 2026 still require developer token header alongside OAuth)."
+        },
+        {
+          "field_name": "credential_acquisition",
+          "original_value": "Admin approval required",
+          "post_validation_value": "Admin approval required",
+          "audited_value": "Admin approval required",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Test/Explorer/Basic/Standard access levels require Google review"
+        },
+        {
+          "field_name": "api_availability",
+          "original_value": "REST",
+          "post_validation_value": "REST",
+          "audited_value": "REST",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "REST + gRPC"
+        },
+        {
+          "field_name": "api_breadth",
+          "original_value": "Large",
+          "post_validation_value": "Large",
+          "audited_value": "Large",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Full campaign, asset, reporting, keyword planning surface"
+        },
+        {
+          "field_name": "mcp_status",
+          "original_value": "Official",
+          "post_validation_value": "Official",
+          "audited_value": "Official",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Official googleads/google-ads-mcp"
+        },
+        {
+          "field_name": "composio_integration",
+          "original_value": "true",
+          "post_validation_value": "true",
+          "audited_value": "true",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "googleads toolkit verified"
+        },
+        {
+          "field_name": "buildability",
+          "original_value": "Buildable with limitations",
+          "post_validation_value": "Buildable with limitations",
+          "audited_value": "Buildable with limitations",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "RMF compliance & Basic/Standard review gate"
+        }
+      ],
+      "discrepancy_summary": "Pass 1 overstated full developer-token sunset; Nov 2026 Google Ads API docs show access levels migrated to GCP projects while developer token header remains referenced in quickstart/OAuth guides.",
+      "final_corrected_conclusion": "Refined auth_methods and primary_blocker to accurately reflect dual OAuth 2.0 + developer token / GCP project access-level gating."
+    },
+    {
+      "app_id": 37,
+      "app_name": "systeme.io",
+      "category": "Marketing, Ads, Email and Social",
+      "official_docs_checked": [
+        "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+        "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp"
+      ],
+      "overall_verdict": "Correct",
+      "field_results": [
+        {
+          "field_name": "auth_methods",
+          "original_value": "API key",
+          "post_validation_value": "API key",
+          "audited_value": "API key",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Public API key + 90-day MCP keys; no OAuth yet"
+        },
+        {
+          "field_name": "credential_acquisition",
+          "original_value": "Free self-service",
+          "post_validation_value": "Free self-service",
+          "audited_value": "Free self-service",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Free account generates API/MCP keys"
+        },
+        {
+          "field_name": "api_availability",
+          "original_value": "REST",
+          "post_validation_value": "REST",
+          "audited_value": "REST",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "REST API"
+        },
+        {
+          "field_name": "api_breadth",
+          "original_value": "Medium",
+          "post_validation_value": "Medium",
+          "audited_value": "Medium",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Contacts, tags, funnels, courses, webhooks"
+        },
+        {
+          "field_name": "mcp_status",
+          "original_value": "Official",
+          "post_validation_value": "Official",
+          "audited_value": "Official",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Official systeme.io MCP server"
+        },
+        {
+          "field_name": "composio_integration",
+          "original_value": "false",
+          "post_validation_value": "false",
+          "audited_value": "false",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "No Composio toolkit"
+        },
+        {
+          "field_name": "buildability",
+          "original_value": "Buildable with limitations",
+          "post_validation_value": "Buildable with limitations",
+          "audited_value": "Buildable with limitations",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Key caps + 90-day expiration + no OAuth"
+        }
+      ],
+      "discrepancy_summary": "No field-level discrepancies.",
+      "final_corrected_conclusion": "Confirmed Buildable with limitations."
+    },
+    {
+      "app_id": 49,
+      "app_name": "Amazon Selling Partner",
+      "category": "Ecommerce",
+      "official_docs_checked": [
+        "https://developer-docs.amazon.com/sp-api/",
+        "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview",
+        "https://developer-docs.amazon.com/sp-api/docs/roles-in-the-selling-partner-api"
+      ],
+      "overall_verdict": "Partially correct",
+      "field_results": [
+        {
+          "field_name": "auth_methods",
+          "original_value": "OAuth 2.0",
+          "post_validation_value": "OAuth 2.0",
+          "audited_value": "OAuth 2.0",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "LWA OAuth 2.0 (AWS IAM/SigV4 no longer required)"
+        },
+        {
+          "field_name": "credential_acquisition",
+          "original_value": "Admin approval required",
+          "post_validation_value": "Admin approval required",
+          "audited_value": "Admin approval required",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Mandatory Developer Identity Verification + Restricted Role review"
+        },
+        {
+          "field_name": "api_availability",
+          "original_value": "REST",
+          "post_validation_value": "REST",
+          "audited_value": "REST",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "REST-based SP-API"
+        },
+        {
+          "field_name": "api_breadth",
+          "original_value": "Large",
+          "post_validation_value": "Large",
+          "audited_value": "Large",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Orders, Catalog, FBA, Feeds, Reports, Finances"
+        },
+        {
+          "field_name": "mcp_status",
+          "original_value": "Official",
+          "post_validation_value": "Official",
+          "audited_value": "Vendor-supported",
+          "pass1_verdict": "Incorrect",
+          "pass2_verdict": "Incorrect",
+          "final_verdict": "Correct",
+          "note": "Pass 1 labeled local sample repo amzn/selling-partner-api-samples as Official; corrected to Vendor-supported."
+        },
+        {
+          "field_name": "composio_integration",
+          "original_value": "true",
+          "post_validation_value": "true",
+          "audited_value": "false",
+          "pass1_verdict": "Incorrect",
+          "pass2_verdict": "Incorrect",
+          "final_verdict": "Correct",
+          "note": "Pass 1 cited generic category page composio.dev/category/e-commerce rather than a dedicated /toolkits/ page; corrected to false (False Positive)."
+        },
+        {
+          "field_name": "buildability",
+          "original_value": "Partner / enterprise dependent",
+          "post_validation_value": "Partner / enterprise dependent",
+          "audited_value": "Partner / enterprise dependent",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Strict Amazon vetting & DPP security review"
+        }
+      ],
+      "discrepancy_summary": "Pass 1 over-claimed Official MCP (actually Vendor-supported local sample) and Composio integration (cited generic category URL instead of dedicated toolkit page), plus non-canonical .amazon TLD.",
+      "final_corrected_conclusion": "Corrected mcp_status to Vendor-supported, composio_integration to false, and developer_docs_url to https://developer-docs.amazon.com/sp-api/."
+    },
+    {
+      "app_id": 50,
+      "app_name": "Fanbasis",
+      "category": "Ecommerce",
+      "official_docs_checked": [
+        "https://commasdocs.com/",
+        "https://commas.com/terms"
+      ],
+      "overall_verdict": "Correct",
+      "field_results": [
+        {
+          "field_name": "auth_methods",
+          "original_value": "API key",
+          "post_validation_value": "API key",
+          "audited_value": "API key",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Confirmed API Key Scopes section directly on commasdocs.com/"
+        },
+        {
+          "field_name": "credential_acquisition",
+          "original_value": "Admin approval required",
+          "post_validation_value": "Admin approval required",
+          "audited_value": "Admin approval required",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Seller KYC/AML & Merchant Acceptance Policy approval"
+        },
+        {
+          "field_name": "api_availability",
+          "original_value": "REST",
+          "post_validation_value": "REST",
+          "audited_value": "REST",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Public REST API under fanbasis.com/public-api"
+        },
+        {
+          "field_name": "api_breadth",
+          "original_value": "Medium",
+          "post_validation_value": "Medium",
+          "audited_value": "Medium",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Checkout sessions, subscriptions, invoices, webhooks"
+        },
+        {
+          "field_name": "mcp_status",
+          "original_value": "Official",
+          "post_validation_value": "Official",
+          "audited_value": "Official",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Official beta MCP at fanbasis.com/mcp"
+        },
+        {
+          "field_name": "composio_integration",
+          "original_value": "false",
+          "post_validation_value": "false",
+          "audited_value": "false",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "No Composio toolkit"
+        },
+        {
+          "field_name": "buildability",
+          "original_value": "Buildable with limitations",
+          "post_validation_value": "Buildable with limitations",
+          "audited_value": "Buildable with limitations",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "KYC/MoR gating + rebrand from FanBasis to Commas"
+        }
+      ],
+      "discrepancy_summary": "Pass 2 heuristic flagged 'auth_supported_only_by_homepage' (False Positive); human audit verified commasdocs.com/ is a single-page API reference with an Authentication & API Key Scopes section.",
+      "final_corrected_conclusion": "Cleared Pass 2 false-positive flag; all 7 fields verified correct."
+    },
+    {
+      "app_id": 58,
+      "app_name": "Sherlock",
+      "category": "Data, SEO and Scraping",
+      "official_docs_checked": [
+        "https://github.com/sherlock-project/sherlock",
+        "https://sherlockeye.io/"
+      ],
+      "overall_verdict": "Unresolved",
+      "field_results": [
+        {
+          "field_name": "auth_methods",
+          "original_value": "Unknown / needs verification",
+          "post_validation_value": "Unknown / needs verification",
+          "audited_value": "Unknown / needs verification",
+          "pass1_verdict": "Unresolved",
+          "pass2_verdict": "Unresolved",
+          "final_verdict": "Unresolved",
+          "note": "Remains genuinely unresolved due to product ambiguity (Sherlock OSINT CLI uses no auth vs commercial namesakes); never counted as correct."
+        },
+        {
+          "field_name": "credential_acquisition",
+          "original_value": "Free self-service",
+          "post_validation_value": "Free self-service",
+          "audited_value": "Free self-service",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "MIT open-source CLI"
+        },
+        {
+          "field_name": "api_availability",
+          "original_value": "No documented public API",
+          "post_validation_value": "No documented public API",
+          "audited_value": "No documented public API",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "CLI / Docker tool with no hosted REST API"
+        },
+        {
+          "field_name": "api_breadth",
+          "original_value": "None / N/A",
+          "post_validation_value": "None / N/A",
+          "audited_value": "None / N/A",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "CLI-only username lookup"
+        },
+        {
+          "field_name": "mcp_status",
+          "original_value": "Community-maintained",
+          "post_validation_value": "Community-maintained",
+          "audited_value": "Community-maintained",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Community FastMCP wrappers exist on GitHub"
+        },
+        {
+          "field_name": "composio_integration",
+          "original_value": "false",
+          "post_validation_value": "false",
+          "audited_value": "false",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "No Composio toolkit"
+        },
+        {
+          "field_name": "buildability",
+          "original_value": "Buildable with limitations",
+          "post_validation_value": "Buildable with limitations",
+          "audited_value": "Buildable with limitations",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Requires containerized CLI execution & proxy handling"
+        }
+      ],
+      "discrepancy_summary": "Product ambiguity confirmed; auth_methods intentionally retained as 'Unknown / needs verification' (not counted as correct in strict denominator).",
+      "final_corrected_conclusion": "Documented Sherlock Project OSINT CLI vs commercial namesake ambiguity; flagged for stakeholder scope confirmation."
+    },
+    {
+      "app_id": 60,
+      "app_name": "Clay",
+      "category": "Data, SEO and Scraping",
+      "official_docs_checked": [
+        "https://developers.clay.com/",
+        "https://developers.clay.com/public-api/authentication",
+        "https://www.clay.com/guides/clay-mcp"
+      ],
+      "overall_verdict": "Correct",
+      "field_results": [
+        {
+          "field_name": "auth_methods",
+          "original_value": "API key, OAuth 2.0",
+          "post_validation_value": "API key, OAuth 2.0",
+          "audited_value": "API key, OAuth 2.0",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Public API v0 API keys + OAuth for Clay MCP"
+        },
+        {
+          "field_name": "credential_acquisition",
+          "original_value": "Free trial",
+          "post_validation_value": "Free trial",
+          "audited_value": "Free trial",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "14-day free trial / starter credits"
+        },
+        {
+          "field_name": "api_availability",
+          "original_value": "REST",
+          "post_validation_value": "REST",
+          "audited_value": "REST",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "2026 Public API v0 REST + webhooks"
+        },
+        {
+          "field_name": "api_breadth",
+          "original_value": "Medium",
+          "post_validation_value": "Medium",
+          "audited_value": "Medium",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Searches, Routines, Tables (Enterprise), Audiences, Signals"
+        },
+        {
+          "field_name": "mcp_status",
+          "original_value": "Official",
+          "post_validation_value": "Official",
+          "audited_value": "Official",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Hosted Clay MCP server"
+        },
+        {
+          "field_name": "composio_integration",
+          "original_value": "true",
+          "post_validation_value": "true",
+          "audited_value": "true",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "clay toolkit verified"
+        },
+        {
+          "field_name": "buildability",
+          "original_value": "Buildable with limitations",
+          "post_validation_value": "Buildable with limitations",
+          "audited_value": "Buildable with limitations",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Tables API is Enterprise-only; Workflows API is Alpha"
+        }
+      ],
+      "discrepancy_summary": "No field-level discrepancies.",
+      "final_corrected_conclusion": "Confirmed Clay's 2026 transition from webhooks-only to Public API v0 + MCP with Enterprise Tables gating."
+    },
+    {
+      "app_id": 67,
+      "app_name": "Snowflake",
+      "category": "Developer, Infra and Data Platforms",
+      "official_docs_checked": [
+        "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+        "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+        "https://www.snowflake.com/en/snowflake-trial/"
+      ],
+      "overall_verdict": "Correct",
+      "field_results": [
+        {
+          "field_name": "auth_methods",
+          "original_value": "JWT / service account, OAuth 2.0, Personal access token, Other / custom authentication",
+          "post_validation_value": "JWT / service account, OAuth 2.0, Personal access token, Other / custom authentication",
+          "audited_value": "JWT / service account, OAuth 2.0, Personal access token, Other / custom authentication",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Key-pair JWT, OAuth, PATs confirmed"
+        },
+        {
+          "field_name": "credential_acquisition",
+          "original_value": "Free trial",
+          "post_validation_value": "Free trial",
+          "audited_value": "Free trial",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "30-day/$400 credit trial; no perpetual free tier"
+        },
+        {
+          "field_name": "api_availability",
+          "original_value": "REST",
+          "post_validation_value": "REST",
+          "audited_value": "REST",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Snowflake REST APIs v2 + SQL REST API"
+        },
+        {
+          "field_name": "api_breadth",
+          "original_value": "Large",
+          "post_validation_value": "Large",
+          "audited_value": "Large",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Full warehouse, SQL, Snowpark, Cortex AI"
+        },
+        {
+          "field_name": "mcp_status",
+          "original_value": "Official",
+          "post_validation_value": "Official",
+          "audited_value": "Official",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Snowflake-managed MCP server"
+        },
+        {
+          "field_name": "composio_integration",
+          "original_value": "true",
+          "post_validation_value": "true",
+          "audited_value": "true",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "snowflake toolkit verified"
+        },
+        {
+          "field_name": "buildability",
+          "original_value": "Buildable with limitations",
+          "post_validation_value": "Buildable with limitations",
+          "audited_value": "Buildable with limitations",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Trial-only + ACCOUNTADMIN/network-policy setup"
+        }
+      ],
+      "discrepancy_summary": "No field-level discrepancies.",
+      "final_corrected_conclusion": "Confirmed Buildable with limitations."
+    },
+    {
+      "app_id": 68,
+      "app_name": "MongoDB Atlas",
+      "category": "Developer, Infra and Data Platforms",
+      "official_docs_checked": [
+        "https://www.mongodb.com/docs/api/doc/atlas-data-api-v1",
+        "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2",
+        "https://github.com/mongodb-js/mongodb-mcp-server"
+      ],
+      "overall_verdict": "Correct",
+      "field_results": [
+        {
+          "field_name": "auth_methods",
+          "original_value": "OAuth 2.0, JWT / service account, API key, Other / custom authentication",
+          "post_validation_value": "OAuth 2.0, JWT / service account, API key, Other / custom authentication",
+          "audited_value": "OAuth 2.0, JWT / service account, API key, Other / custom authentication",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "OAuth Service Accounts + Digest Auth keys"
+        },
+        {
+          "field_name": "credential_acquisition",
+          "original_value": "Free self-service",
+          "post_validation_value": "Free self-service",
+          "audited_value": "Free self-service",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Perpetual M0 free tier"
+        },
+        {
+          "field_name": "api_availability",
+          "original_value": "REST",
+          "post_validation_value": "REST",
+          "audited_value": "REST",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Atlas Admin API v2 REST (Data API EOL Sep 30, 2025)"
+        },
+        {
+          "field_name": "api_breadth",
+          "original_value": "Large",
+          "post_validation_value": "Large",
+          "audited_value": "Large",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Extensive control-plane Admin API"
+        },
+        {
+          "field_name": "mcp_status",
+          "original_value": "Official",
+          "post_validation_value": "Official",
+          "audited_value": "Official",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Official mongodb-js/mongodb-mcp-server"
+        },
+        {
+          "field_name": "composio_integration",
+          "original_value": "true",
+          "post_validation_value": "true",
+          "audited_value": "true",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "mongodb & mongodb_mcp toolkits verified"
+        },
+        {
+          "field_name": "buildability",
+          "original_value": "Buildable with limitations",
+          "post_validation_value": "Buildable with limitations",
+          "audited_value": "Buildable with limitations",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Data API EOL means document CRUD requires drivers or MCP"
+        }
+      ],
+      "discrepancy_summary": "No field-level discrepancies; independently confirmed Sep 30, 2025 Atlas Data API EOL.",
+      "final_corrected_conclusion": "Confirmed Buildable with limitations due to Data API end-of-life."
+    },
+    {
+      "app_id": 78,
+      "app_name": "Coda",
+      "category": "Productivity and Project Management",
+      "official_docs_checked": [
+        "https://help.superhuman.com/hc/en-us/articles/46210093285773-What-s-changing-Coda-becomes-Superhuman-Docs",
+        "https://help.superhuman.com/hc/en-us/articles/46210076980365-Connect-to-the-Superhuman-Docs-MCP",
+        "https://help.superhuman.com/hc/en-us/articles/46210118248205-Security-recommendations-for-the-Docs-MCP"
+      ],
+      "overall_verdict": "Correct",
+      "field_results": [
+        {
+          "field_name": "auth_methods",
+          "original_value": "Personal access token, OAuth 2.0",
+          "post_validation_value": "Personal access token, OAuth 2.0",
+          "audited_value": "Personal access token, OAuth 2.0",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Confirmed PAT + OAuth on Superhuman Docs MCP"
+        },
+        {
+          "field_name": "credential_acquisition",
+          "original_value": "Free self-service",
+          "post_validation_value": "Free self-service",
+          "audited_value": "Free self-service",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Self-serve API tokens at docs.superhuman.com/account"
+        },
+        {
+          "field_name": "api_availability",
+          "original_value": "REST",
+          "post_validation_value": "REST",
+          "audited_value": "REST",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Coda API v1 REST"
+        },
+        {
+          "field_name": "api_breadth",
+          "original_value": "Medium",
+          "post_validation_value": "Medium",
+          "audited_value": "Medium",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Docs, pages, tables, rows, read-only formulas"
+        },
+        {
+          "field_name": "mcp_status",
+          "original_value": "Official",
+          "post_validation_value": "Official",
+          "audited_value": "Official",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Official Superhuman Docs MCP at docs.superhuman.com/apis/mcp"
+        },
+        {
+          "field_name": "composio_integration",
+          "original_value": "true",
+          "post_validation_value": "true",
+          "audited_value": "true",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "coda toolkit verified"
+        },
+        {
+          "field_name": "buildability",
+          "original_value": "Buildable with limitations",
+          "post_validation_value": "Buildable with limitations",
+          "audited_value": "Buildable with limitations",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Rebrand transition + PAT-only REST v1"
+        }
+      ],
+      "discrepancy_summary": "All 7 fields confirmed against live Superhuman Help Center docs; upgraded confidence from Medium to High.",
+      "final_corrected_conclusion": "Verified July 2026 Coda -> Superhuman Docs rebrand and upgraded confidence to High."
+    },
+    {
+      "app_id": 79,
+      "app_name": "Smartsheet",
+      "category": "Productivity and Project Management",
+      "official_docs_checked": [
+        "https://help.smartsheet.com/articles/529590-smartsheet-free-trial-faqs",
+        "https://help.smartsheet.com/articles/2482687-free-plan",
+        "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server"
+      ],
+      "overall_verdict": "Correct",
+      "field_results": [
+        {
+          "field_name": "auth_methods",
+          "original_value": "OAuth 2.0, Personal access token, API key",
+          "post_validation_value": "OAuth 2.0, Personal access token, API key",
+          "audited_value": "OAuth 2.0, Personal access token, API key",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "OAuth2 + PATs confirmed"
+        },
+        {
+          "field_name": "credential_acquisition",
+          "original_value": "Paid-plan required",
+          "post_validation_value": "Paid-plan required",
+          "audited_value": "Paid-plan required",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Confirmed verbatim: Free plan discontinued Aug 2024 and free trial blocks API access token generation"
+        },
+        {
+          "field_name": "api_availability",
+          "original_value": "REST",
+          "post_validation_value": "REST",
+          "audited_value": "REST",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "REST API 2.0"
+        },
+        {
+          "field_name": "api_breadth",
+          "original_value": "Large",
+          "post_validation_value": "Large",
+          "audited_value": "Large",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Full sheets, reports, dashboards, governance, webhooks"
+        },
+        {
+          "field_name": "mcp_status",
+          "original_value": "Official",
+          "post_validation_value": "Official",
+          "audited_value": "Official",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Official smartsheet-platform/smar-mcp"
+        },
+        {
+          "field_name": "composio_integration",
+          "original_value": "true",
+          "post_validation_value": "true",
+          "audited_value": "true",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "smartsheet toolkit verified"
+        },
+        {
+          "field_name": "buildability",
+          "original_value": "Buildable with limitations",
+          "post_validation_value": "Buildable with limitations",
+          "audited_value": "Buildable with limitations",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Paid-plan gating for token generation"
+        }
+      ],
+      "discrepancy_summary": "No field-level discrepancies; verified critical trial restriction ('You can't generate API access tokens').",
+      "final_corrected_conclusion": "Confirmed Paid-plan required and Buildable with limitations."
+    },
+    {
+      "app_id": 84,
+      "app_name": "Paygent Connect",
+      "category": "Finance and Fintech",
+      "official_docs_checked": [
+        "https://www.gopaygent.com/",
+        "https://www.gopaygent.com/developers/docs"
+      ],
+      "overall_verdict": "Unresolved",
+      "field_results": [
+        {
+          "field_name": "auth_methods",
+          "original_value": "API key, Unknown / needs verification",
+          "post_validation_value": "API key, Unknown / needs verification",
+          "audited_value": "API key, Unknown / needs verification",
+          "pass1_verdict": "Unresolved",
+          "pass2_verdict": "Unresolved",
+          "final_verdict": "Unresolved",
+          "note": "Sparse docs lack verified Connect auth guide; counted as unresolved (not correct)."
+        },
+        {
+          "field_name": "credential_acquisition",
+          "original_value": "Unclear / not verified",
+          "post_validation_value": "Unclear / not verified",
+          "audited_value": "Unclear / not verified",
+          "pass1_verdict": "Unresolved",
+          "pass2_verdict": "Unresolved",
+          "final_verdict": "Unresolved",
+          "note": "No verified self-serve sandbox or KYB onboarding path; counted as unresolved (not correct)."
+        },
+        {
+          "field_name": "api_availability",
+          "original_value": "REST",
+          "post_validation_value": "REST",
+          "audited_value": "REST",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Markets REST API endpoints"
+        },
+        {
+          "field_name": "api_breadth",
+          "original_value": "Small",
+          "post_validation_value": "Small",
+          "audited_value": "Small",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Only brief Collect.js snippet publicly documented"
+        },
+        {
+          "field_name": "mcp_status",
+          "original_value": "Not found",
+          "post_validation_value": "Not found",
+          "audited_value": "Not found",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "No MCP server found"
+        },
+        {
+          "field_name": "composio_integration",
+          "original_value": "false",
+          "post_validation_value": "false",
+          "audited_value": "false",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "No Composio toolkit"
+        },
+        {
+          "field_name": "buildability",
+          "original_value": "Not currently practical",
+          "post_validation_value": "Not currently practical",
+          "audited_value": "Not currently practical",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Sparse, inconsistent public documentation & brand collision"
+        }
+      ],
+      "discrepancy_summary": "Confirmed low-confidence status; 2 fields (auth_methods, credential_acquisition) remain explicitly unresolved and are excluded from 'correct' numerator.",
+      "final_corrected_conclusion": "Retained as Not currently practical with explicit unresolved credential/auth flags."
+    },
+    {
+      "app_id": 87,
+      "app_name": "Xero",
+      "category": "Finance and Fintech",
+      "official_docs_checked": [
+        "https://developer.xero.com/pricing",
+        "https://developer.xero.com/faq/pricing-and-policy-updates",
+        "https://developer.xero.com/documentation/guides/remote-mcp/overview"
+      ],
+      "overall_verdict": "Correct",
+      "field_results": [
+        {
+          "field_name": "auth_methods",
+          "original_value": "OAuth 2.0",
+          "post_validation_value": "OAuth 2.0",
+          "audited_value": "OAuth 2.0",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "OAuth 2.0 PKCE / Auth Code"
+        },
+        {
+          "field_name": "credential_acquisition",
+          "original_value": "Free self-service",
+          "post_validation_value": "Free self-service",
+          "audited_value": "Free self-service",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Starter tier ($0) allows up to 5 connections"
+        },
+        {
+          "field_name": "api_availability",
+          "original_value": "REST",
+          "post_validation_value": "REST",
+          "audited_value": "REST",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "REST API suite"
+        },
+        {
+          "field_name": "api_breadth",
+          "original_value": "Large",
+          "post_validation_value": "Large",
+          "audited_value": "Large",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Accounting, Payroll, Assets, Projects, Webhooks"
+        },
+        {
+          "field_name": "mcp_status",
+          "original_value": "Official",
+          "post_validation_value": "Official",
+          "audited_value": "Official",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Official xero-mcp-server + Remote MCP (Core+ $35 AUD/mo)"
+        },
+        {
+          "field_name": "composio_integration",
+          "original_value": "true",
+          "post_validation_value": "true",
+          "audited_value": "true",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "xero toolkit verified"
+        },
+        {
+          "field_name": "buildability",
+          "original_value": "Buildable with limitations",
+          "post_validation_value": "Buildable with limitations",
+          "audited_value": "Buildable with limitations",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "March 2026 commercial tiering + egress billing ($2.40 AUD/GB)"
+        }
+      ],
+      "discrepancy_summary": "No field-level discrepancies; confirmed exact March 2, 2026 commercial tier table ($0 Starter / $35 AUD Core / $245 AUD Plus / $1,445 AUD Advanced).",
+      "final_corrected_conclusion": "Confirmed Buildable with limitations and verified exact 2026 commercial tiering."
+    },
+    {
+      "app_id": 91,
+      "app_name": "NotebookLM",
+      "category": "AI, Research and Media-native",
+      "official_docs_checked": [
+        "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+        "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/overview"
+      ],
+      "overall_verdict": "Correct",
+      "field_results": [
+        {
+          "field_name": "auth_methods",
+          "original_value": "OAuth 2.0",
+          "post_validation_value": "OAuth 2.0",
+          "audited_value": "OAuth 2.0",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Google Cloud OAuth user credentials"
+        },
+        {
+          "field_name": "credential_acquisition",
+          "original_value": "Enterprise-only",
+          "post_validation_value": "Enterprise-only",
+          "audited_value": "Enterprise-only",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Requires Gemini Notebook Enterprise licensing on GCP"
+        },
+        {
+          "field_name": "api_availability",
+          "original_value": "REST",
+          "post_validation_value": "REST",
+          "audited_value": "REST",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Pre-GA v1alpha Discovery Engine REST API"
+        },
+        {
+          "field_name": "api_breadth",
+          "original_value": "Small",
+          "post_validation_value": "Small",
+          "audited_value": "Small",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Notebooks, sources, sharing, audio overviews"
+        },
+        {
+          "field_name": "mcp_status",
+          "original_value": "Composio integration",
+          "post_validation_value": "Composio integration",
+          "audited_value": "Composio integration",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Composio notebook_lm toolkit; no official Google MCP"
+        },
+        {
+          "field_name": "composio_integration",
+          "original_value": "true",
+          "post_validation_value": "true",
+          "audited_value": "true",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Verified at composio.dev/toolkits/notebook_lm"
+        },
+        {
+          "field_name": "buildability",
+          "original_value": "Partner / enterprise dependent",
+          "post_validation_value": "Partner / enterprise dependent",
+          "audited_value": "Partner / enterprise dependent",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Enterprise GCP license + Pre-GA terms"
+        }
+      ],
+      "discrepancy_summary": "No field-level discrepancies.",
+      "final_corrected_conclusion": "Confirmed Partner / enterprise dependent (Pre-GA Enterprise API; no consumer API)."
+    },
+    {
+      "app_id": 98,
+      "app_name": "Mermaid CLI",
+      "category": "AI, Research and Media-native",
+      "official_docs_checked": [
+        "https://github.com/mermaid-js/mermaid-cli",
+        "https://github.com/hustcc/mcp-mermaid"
+      ],
+      "overall_verdict": "Partially correct",
+      "field_results": [
+        {
+          "field_name": "auth_methods",
+          "original_value": "[] (empty list \u2014 Pass 1 schema violation)",
+          "post_validation_value": "None (local CLI / no auth)",
+          "audited_value": "None (local CLI / no auth)",
+          "pass1_verdict": "Incorrect",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Pass 1 emitted empty list []; caught by Pydantic min_items=1 validation in Pass 2 and normalized to explicit 'None (local CLI / no auth)'."
+        },
+        {
+          "field_name": "credential_acquisition",
+          "original_value": "Free self-service",
+          "post_validation_value": "Free self-service",
+          "audited_value": "Free self-service",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "MIT open-source npm package / Docker image"
+        },
+        {
+          "field_name": "api_availability",
+          "original_value": "No documented public API",
+          "post_validation_value": "No documented public API",
+          "audited_value": "No documented public API",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Local Node.js CLI binary (mmdc)"
+        },
+        {
+          "field_name": "api_breadth",
+          "original_value": "None / N/A",
+          "post_validation_value": "None / N/A",
+          "audited_value": "None / N/A",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Local rendering tool, not hosted API"
+        },
+        {
+          "field_name": "mcp_status",
+          "original_value": "Community-maintained",
+          "post_validation_value": "Community-maintained",
+          "audited_value": "Community-maintained",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Community MCP wrappers (hustcc/mcp-mermaid, peng-shawn/mermaid-mcp-server)"
+        },
+        {
+          "field_name": "composio_integration",
+          "original_value": "false",
+          "post_validation_value": "false",
+          "audited_value": "false",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Composio mermaid_chart_mcp targets separate commercial SaaS"
+        },
+        {
+          "field_name": "buildability",
+          "original_value": "Buildable with limitations",
+          "post_validation_value": "Buildable with limitations",
+          "audited_value": "Buildable with limitations",
+          "pass1_verdict": "Correct",
+          "pass2_verdict": "Correct",
+          "final_verdict": "Correct",
+          "note": "Requires headless Chromium container runtime"
+        }
+      ],
+      "discrepancy_summary": "Pass 1 returned empty auth_methods array []; Pass 2 Pydantic validation caught and normalized it to 'None (local CLI / no auth)'.",
+      "final_corrected_conclusion": "Corrected auth_methods enum to 'None (local CLI / no auth)'; all other fields verified."
+    }
+  ]
+}

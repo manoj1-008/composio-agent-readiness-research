@@ -1,0 +1,2453 @@
+{
+  "generated_at": "2026-11-24",
+  "overview": {
+    "total_apps_in_scope": 100,
+    "apps_researched": 100,
+    "total_evidence_records": 461,
+    "verified_evidence_records": 383,
+    "avg_evidence_per_app": 4.61,
+    "avg_evidence_score": 0.919,
+    "free_or_trial_count": 72,
+    "free_self_service_count": 55,
+    "gated_credential_count": 27,
+    "official_mcp_count": 81,
+    "vendor_mcp_count": 2,
+    "composio_integrated_count": 79,
+    "needs_human_review_count": 3,
+    "high_confidence_count": 87,
+    "medium_confidence_count": 12,
+    "low_confidence_count": 1
+  },
+  "distributions": {
+    "auth_methods": {
+      "OAuth 2.0": 77,
+      "API key": 62,
+      "Personal access token": 26,
+      "Other / custom authentication": 18,
+      "Basic authentication": 17,
+      "JWT / service account": 10,
+      "Unknown / needs verification": 2,
+      "None (local CLI / no auth)": 1
+    },
+    "credential_acquisition": {
+      "Free self-service": 55,
+      "Free trial": 17,
+      "Admin approval required": 10,
+      "Paid-plan required": 8,
+      "Enterprise-only": 5,
+      "Partner / contact-sales gated": 4,
+      "Unclear / not verified": 1
+    },
+    "api_availability": {
+      "REST": 81,
+      "Both": 13,
+      "GraphQL": 3,
+      "No documented public API": 2,
+      "SDK-only": 1
+    },
+    "api_breadth": {
+      "Large": 68,
+      "Medium": 22,
+      "Small": 8,
+      "None / N/A": 2
+    },
+    "mcp_status": {
+      "Official": 81,
+      "Composio integration": 10,
+      "Community-maintained": 4,
+      "Not found": 3,
+      "Vendor-supported": 2
+    },
+    "buildability": {
+      "Ready to build": 58,
+      "Buildable with limitations": 29,
+      "Partner / enterprise dependent": 12,
+      "Not currently practical": 1
+    },
+    "confidence": {
+      "High": 87,
+      "Medium": 12,
+      "Low": 1
+    },
+    "verification_status": {
+      "Cross-checked": 79,
+      "Human audited": 18,
+      "Needs human review": 3
+    }
+  },
+  "category_breakdown": [
+    {
+      "category": "CRM and Sales",
+      "total": 10,
+      "ready_to_build": 7,
+      "buildable_with_limitations": 2,
+      "partner_enterprise": 1,
+      "not_practical": 0,
+      "free_self_service": 7,
+      "official_mcp": 9,
+      "vendor_mcp": 0,
+      "composio_integrated": 9,
+      "oauth_count": 10,
+      "large_api_count": 7
+    },
+    {
+      "category": "Support and Helpdesk",
+      "total": 10,
+      "ready_to_build": 8,
+      "buildable_with_limitations": 0,
+      "partner_enterprise": 2,
+      "not_practical": 0,
+      "free_self_service": 2,
+      "official_mcp": 10,
+      "vendor_mcp": 0,
+      "composio_integrated": 7,
+      "oauth_count": 9,
+      "large_api_count": 9
+    },
+    {
+      "category": "Communications and Messaging",
+      "total": 10,
+      "ready_to_build": 6,
+      "buildable_with_limitations": 4,
+      "partner_enterprise": 0,
+      "not_practical": 0,
+      "free_self_service": 6,
+      "official_mcp": 7,
+      "vendor_mcp": 1,
+      "composio_integrated": 9,
+      "oauth_count": 6,
+      "large_api_count": 8
+    },
+    {
+      "category": "Marketing, Ads, Email and Social",
+      "total": 10,
+      "ready_to_build": 4,
+      "buildable_with_limitations": 5,
+      "partner_enterprise": 1,
+      "not_practical": 0,
+      "free_self_service": 3,
+      "official_mcp": 6,
+      "vendor_mcp": 0,
+      "composio_integrated": 9,
+      "oauth_count": 8,
+      "large_api_count": 8
+    },
+    {
+      "category": "Ecommerce",
+      "total": 10,
+      "ready_to_build": 4,
+      "buildable_with_limitations": 4,
+      "partner_enterprise": 2,
+      "not_practical": 0,
+      "free_self_service": 4,
+      "official_mcp": 6,
+      "vendor_mcp": 1,
+      "composio_integrated": 3,
+      "oauth_count": 8,
+      "large_api_count": 7
+    },
+    {
+      "category": "Data, SEO and Scraping",
+      "total": 10,
+      "ready_to_build": 6,
+      "buildable_with_limitations": 3,
+      "partner_enterprise": 1,
+      "not_practical": 0,
+      "free_self_service": 5,
+      "official_mcp": 8,
+      "vendor_mcp": 0,
+      "composio_integrated": 7,
+      "oauth_count": 5,
+      "large_api_count": 6
+    },
+    {
+      "category": "Developer, Infra and Data Platforms",
+      "total": 10,
+      "ready_to_build": 8,
+      "buildable_with_limitations": 2,
+      "partner_enterprise": 0,
+      "not_practical": 0,
+      "free_self_service": 8,
+      "official_mcp": 10,
+      "vendor_mcp": 0,
+      "composio_integrated": 10,
+      "oauth_count": 10,
+      "large_api_count": 8
+    },
+    {
+      "category": "Productivity and Project Management",
+      "total": 10,
+      "ready_to_build": 8,
+      "buildable_with_limitations": 2,
+      "partner_enterprise": 0,
+      "not_practical": 0,
+      "free_self_service": 9,
+      "official_mcp": 10,
+      "vendor_mcp": 0,
+      "composio_integrated": 10,
+      "oauth_count": 10,
+      "large_api_count": 7
+    },
+    {
+      "category": "Finance and Fintech",
+      "total": 10,
+      "ready_to_build": 1,
+      "buildable_with_limitations": 5,
+      "partner_enterprise": 3,
+      "not_practical": 1,
+      "free_self_service": 5,
+      "official_mcp": 9,
+      "vendor_mcp": 0,
+      "composio_integrated": 7,
+      "oauth_count": 6,
+      "large_api_count": 7
+    },
+    {
+      "category": "AI, Research and Media-native",
+      "total": 10,
+      "ready_to_build": 6,
+      "buildable_with_limitations": 2,
+      "partner_enterprise": 2,
+      "not_practical": 0,
+      "free_self_service": 6,
+      "official_mcp": 6,
+      "vendor_mcp": 0,
+      "composio_integrated": 8,
+      "oauth_count": 5,
+      "large_api_count": 1
+    }
+  ],
+  "opportunity_matrix": [
+    {
+      "id": 1,
+      "name": "Salesforce",
+      "category": "CRM and Sales",
+      "accessibility_score": 93,
+      "api_maturity_score": 98,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 2,
+      "name": "HubSpot",
+      "category": "CRM and Sales",
+      "accessibility_score": 93,
+      "api_maturity_score": 96,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 3,
+      "name": "Pipedrive",
+      "category": "CRM and Sales",
+      "accessibility_score": 93,
+      "api_maturity_score": 92,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 4,
+      "name": "Attio",
+      "category": "CRM and Sales",
+      "accessibility_score": 93,
+      "api_maturity_score": 67,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Medium",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 5,
+      "name": "Twenty",
+      "category": "CRM and Sales",
+      "accessibility_score": 93,
+      "api_maturity_score": 79,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Medium",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 6,
+      "name": "Podio",
+      "category": "CRM and Sales",
+      "accessibility_score": 89,
+      "api_maturity_score": 86,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Composio integration",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 7,
+      "name": "Zoho CRM",
+      "category": "CRM and Sales",
+      "accessibility_score": 93,
+      "api_maturity_score": 95,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 8,
+      "name": "Close",
+      "category": "CRM and Sales",
+      "accessibility_score": 75,
+      "api_maturity_score": 91,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free trial",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 9,
+      "name": "Copper",
+      "category": "CRM and Sales",
+      "accessibility_score": 49,
+      "api_maturity_score": 66,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Paid-plan required",
+      "api_breadth": "Medium",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 10,
+      "name": "DealCloud",
+      "category": "CRM and Sales",
+      "accessibility_score": 11,
+      "api_maturity_score": 92,
+      "buildability": "Partner / enterprise dependent",
+      "credential_acquisition": "Enterprise-only",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": false,
+      "confidence": "High"
+    },
+    {
+      "id": 11,
+      "name": "Zendesk",
+      "category": "Support and Helpdesk",
+      "accessibility_score": 75,
+      "api_maturity_score": 89,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free trial",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 12,
+      "name": "Intercom",
+      "category": "Support and Helpdesk",
+      "accessibility_score": 93,
+      "api_maturity_score": 93,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 13,
+      "name": "Freshdesk",
+      "category": "Support and Helpdesk",
+      "accessibility_score": 75,
+      "api_maturity_score": 90,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free trial",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 14,
+      "name": "Front",
+      "category": "Support and Helpdesk",
+      "accessibility_score": 93,
+      "api_maturity_score": 87,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": false,
+      "confidence": "High"
+    },
+    {
+      "id": 15,
+      "name": "Pylon",
+      "category": "Support and Helpdesk",
+      "accessibility_score": 17,
+      "api_maturity_score": 91,
+      "buildability": "Partner / enterprise dependent",
+      "credential_acquisition": "Partner / contact-sales gated",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 16,
+      "name": "LiveAgent",
+      "category": "Support and Helpdesk",
+      "accessibility_score": 75,
+      "api_maturity_score": 88,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free trial",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": false,
+      "confidence": "High"
+    },
+    {
+      "id": 17,
+      "name": "Plain",
+      "category": "Support and Helpdesk",
+      "accessibility_score": 75,
+      "api_maturity_score": 94,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free trial",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 18,
+      "name": "Help Scout",
+      "category": "Support and Helpdesk",
+      "accessibility_score": 75,
+      "api_maturity_score": 89,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free trial",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 19,
+      "name": "Gorgias",
+      "category": "Support and Helpdesk",
+      "accessibility_score": 75,
+      "api_maturity_score": 93,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free trial",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 20,
+      "name": "Gladly",
+      "category": "Support and Helpdesk",
+      "accessibility_score": 17,
+      "api_maturity_score": 68,
+      "buildability": "Partner / enterprise dependent",
+      "credential_acquisition": "Partner / contact-sales gated",
+      "api_breadth": "Medium",
+      "mcp_status": "Official",
+      "composio_integration": false,
+      "confidence": "High"
+    },
+    {
+      "id": 21,
+      "name": "Slack",
+      "category": "Communications and Messaging",
+      "accessibility_score": 93,
+      "api_maturity_score": 87,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 22,
+      "name": "Twilio",
+      "category": "Communications and Messaging",
+      "accessibility_score": 75,
+      "api_maturity_score": 87,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free trial",
+      "api_breadth": "Large",
+      "mcp_status": "Vendor-supported",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 23,
+      "name": "Zoho Cliq",
+      "category": "Communications and Messaging",
+      "accessibility_score": 93,
+      "api_maturity_score": 88,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 24,
+      "name": "Lark",
+      "category": "Communications and Messaging",
+      "accessibility_score": 35,
+      "api_maturity_score": 92,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Admin approval required",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 25,
+      "name": "Pumble",
+      "category": "Communications and Messaging",
+      "accessibility_score": 89,
+      "api_maturity_score": 47,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Small",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 26,
+      "name": "Discord",
+      "category": "Communications and Messaging",
+      "accessibility_score": 93,
+      "api_maturity_score": 89,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Composio integration",
+      "composio_integration": true,
+      "confidence": "Medium"
+    },
+    {
+      "id": 27,
+      "name": "Telegram",
+      "category": "Communications and Messaging",
+      "accessibility_score": 93,
+      "api_maturity_score": 86,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Composio integration",
+      "composio_integration": true,
+      "confidence": "Medium"
+    },
+    {
+      "id": 28,
+      "name": "WhatsApp Business",
+      "category": "Communications and Messaging",
+      "accessibility_score": 89,
+      "api_maturity_score": 87,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 29,
+      "name": "Aircall",
+      "category": "Communications and Messaging",
+      "accessibility_score": 71,
+      "api_maturity_score": 69,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Free trial",
+      "api_breadth": "Medium",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 30,
+      "name": "Vonage",
+      "category": "Communications and Messaging",
+      "accessibility_score": 75,
+      "api_maturity_score": 88,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free trial",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": false,
+      "confidence": "High"
+    },
+    {
+      "id": 31,
+      "name": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "accessibility_score": 35,
+      "api_maturity_score": 92,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Admin approval required",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 32,
+      "name": "Meta Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "accessibility_score": 35,
+      "api_maturity_score": 89,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Admin approval required",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 33,
+      "name": "LinkedIn Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "accessibility_score": 17,
+      "api_maturity_score": 89,
+      "buildability": "Partner / enterprise dependent",
+      "credential_acquisition": "Partner / contact-sales gated",
+      "api_breadth": "Large",
+      "mcp_status": "Composio integration",
+      "composio_integration": true,
+      "confidence": "Medium"
+    },
+    {
+      "id": 34,
+      "name": "GoHighLevel",
+      "category": "Marketing, Ads, Email and Social",
+      "accessibility_score": 53,
+      "api_maturity_score": 90,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Paid-plan required",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "Medium"
+    },
+    {
+      "id": 35,
+      "name": "Mailchimp",
+      "category": "Marketing, Ads, Email and Social",
+      "accessibility_score": 93,
+      "api_maturity_score": 87,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "Medium"
+    },
+    {
+      "id": 36,
+      "name": "Klaviyo",
+      "category": "Marketing, Ads, Email and Social",
+      "accessibility_score": 93,
+      "api_maturity_score": 91,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "Medium"
+    },
+    {
+      "id": 37,
+      "name": "systeme.io",
+      "category": "Marketing, Ads, Email and Social",
+      "accessibility_score": 89,
+      "api_maturity_score": 66,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Medium",
+      "mcp_status": "Official",
+      "composio_integration": false,
+      "confidence": "High"
+    },
+    {
+      "id": 38,
+      "name": "Pinterest",
+      "category": "Marketing, Ads, Email and Social",
+      "accessibility_score": 35,
+      "api_maturity_score": 88,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Admin approval required",
+      "api_breadth": "Large",
+      "mcp_status": "Composio integration",
+      "composio_integration": true,
+      "confidence": "Medium"
+    },
+    {
+      "id": 39,
+      "name": "Threads",
+      "category": "Marketing, Ads, Email and Social",
+      "accessibility_score": 35,
+      "api_maturity_score": 63,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Admin approval required",
+      "api_breadth": "Medium",
+      "mcp_status": "Composio integration",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 40,
+      "name": "SendGrid",
+      "category": "Marketing, Ads, Email and Social",
+      "accessibility_score": 75,
+      "api_maturity_score": 89,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free trial",
+      "api_breadth": "Large",
+      "mcp_status": "Composio integration",
+      "composio_integration": true,
+      "confidence": "Medium"
+    },
+    {
+      "id": 41,
+      "name": "Shopify",
+      "category": "Ecommerce",
+      "accessibility_score": 93,
+      "api_maturity_score": 98,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 42,
+      "name": "WooCommerce",
+      "category": "Ecommerce",
+      "accessibility_score": 93,
+      "api_maturity_score": 87,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": false,
+      "confidence": "High"
+    },
+    {
+      "id": 43,
+      "name": "BigCommerce",
+      "category": "Ecommerce",
+      "accessibility_score": 75,
+      "api_maturity_score": 98,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free trial",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 44,
+      "name": "Salesforce Commerce Cloud",
+      "category": "Ecommerce",
+      "accessibility_score": 11,
+      "api_maturity_score": 80,
+      "buildability": "Partner / enterprise dependent",
+      "credential_acquisition": "Enterprise-only",
+      "api_breadth": "Large",
+      "mcp_status": "Community-maintained",
+      "composio_integration": false,
+      "confidence": "High"
+    },
+    {
+      "id": 45,
+      "name": "Magento",
+      "category": "Ecommerce",
+      "accessibility_score": 89,
+      "api_maturity_score": 92,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Community-maintained",
+      "composio_integration": false,
+      "confidence": "High"
+    },
+    {
+      "id": 46,
+      "name": "Squarespace",
+      "category": "Ecommerce",
+      "accessibility_score": 49,
+      "api_maturity_score": 67,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Paid-plan required",
+      "api_breadth": "Medium",
+      "mcp_status": "Official",
+      "composio_integration": false,
+      "confidence": "High"
+    },
+    {
+      "id": 47,
+      "name": "Ecwid",
+      "category": "Ecommerce",
+      "accessibility_score": 49,
+      "api_maturity_score": 85,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Paid-plan required",
+      "api_breadth": "Large",
+      "mcp_status": "Not found",
+      "composio_integration": false,
+      "confidence": "High"
+    },
+    {
+      "id": 48,
+      "name": "Gumroad",
+      "category": "Ecommerce",
+      "accessibility_score": 93,
+      "api_maturity_score": 68,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Medium",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 49,
+      "name": "Amazon Selling Partner",
+      "category": "Ecommerce",
+      "accessibility_score": 35,
+      "api_maturity_score": 83,
+      "buildability": "Partner / enterprise dependent",
+      "credential_acquisition": "Admin approval required",
+      "api_breadth": "Large",
+      "mcp_status": "Vendor-supported",
+      "composio_integration": false,
+      "confidence": "High"
+    },
+    {
+      "id": 50,
+      "name": "Fanbasis",
+      "category": "Ecommerce",
+      "accessibility_score": 35,
+      "api_maturity_score": 69,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Admin approval required",
+      "api_breadth": "Medium",
+      "mcp_status": "Official",
+      "composio_integration": false,
+      "confidence": "High"
+    },
+    {
+      "id": 51,
+      "name": "DataForSEO",
+      "category": "Data, SEO and Scraping",
+      "accessibility_score": 75,
+      "api_maturity_score": 88,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free trial",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "Medium"
+    },
+    {
+      "id": 52,
+      "name": "SE Ranking",
+      "category": "Data, SEO and Scraping",
+      "accessibility_score": 75,
+      "api_maturity_score": 92,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free trial",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": false,
+      "confidence": "High"
+    },
+    {
+      "id": 53,
+      "name": "Ahrefs",
+      "category": "Data, SEO and Scraping",
+      "accessibility_score": 49,
+      "api_maturity_score": 89,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Paid-plan required",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 54,
+      "name": "MrScraper",
+      "category": "Data, SEO and Scraping",
+      "accessibility_score": 93,
+      "api_maturity_score": 71,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Medium",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 55,
+      "name": "Apify",
+      "category": "Data, SEO and Scraping",
+      "accessibility_score": 93,
+      "api_maturity_score": 90,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "Medium"
+    },
+    {
+      "id": 56,
+      "name": "Firecrawl",
+      "category": "Data, SEO and Scraping",
+      "accessibility_score": 93,
+      "api_maturity_score": 87,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 57,
+      "name": "Bright Data",
+      "category": "Data, SEO and Scraping",
+      "accessibility_score": 93,
+      "api_maturity_score": 91,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 58,
+      "name": "Sherlock",
+      "category": "Data, SEO and Scraping",
+      "accessibility_score": 89,
+      "api_maturity_score": 4,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "None / N/A",
+      "mcp_status": "Community-maintained",
+      "composio_integration": false,
+      "confidence": "Medium"
+    },
+    {
+      "id": 59,
+      "name": "Waterfall.io",
+      "category": "Data, SEO and Scraping",
+      "accessibility_score": 17,
+      "api_maturity_score": 62,
+      "buildability": "Partner / enterprise dependent",
+      "credential_acquisition": "Partner / contact-sales gated",
+      "api_breadth": "Medium",
+      "mcp_status": "Not found",
+      "composio_integration": false,
+      "confidence": "High"
+    },
+    {
+      "id": 60,
+      "name": "Clay",
+      "category": "Data, SEO and Scraping",
+      "accessibility_score": 71,
+      "api_maturity_score": 67,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Free trial",
+      "api_breadth": "Medium",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 61,
+      "name": "GitHub",
+      "category": "Developer, Infra and Data Platforms",
+      "accessibility_score": 93,
+      "api_maturity_score": 98,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 62,
+      "name": "Vercel",
+      "category": "Developer, Infra and Data Platforms",
+      "accessibility_score": 93,
+      "api_maturity_score": 90,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 63,
+      "name": "Netlify",
+      "category": "Developer, Infra and Data Platforms",
+      "accessibility_score": 93,
+      "api_maturity_score": 65,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Medium",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 64,
+      "name": "Cloudflare",
+      "category": "Developer, Infra and Data Platforms",
+      "accessibility_score": 93,
+      "api_maturity_score": 98,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 65,
+      "name": "Supabase",
+      "category": "Developer, Infra and Data Platforms",
+      "accessibility_score": 93,
+      "api_maturity_score": 96,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 66,
+      "name": "Neo4j",
+      "category": "Developer, Infra and Data Platforms",
+      "accessibility_score": 93,
+      "api_maturity_score": 78,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Medium",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 67,
+      "name": "Snowflake",
+      "category": "Developer, Infra and Data Platforms",
+      "accessibility_score": 71,
+      "api_maturity_score": 89,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Free trial",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 68,
+      "name": "MongoDB Atlas",
+      "category": "Developer, Infra and Data Platforms",
+      "accessibility_score": 89,
+      "api_maturity_score": 93,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 69,
+      "name": "Datadog",
+      "category": "Developer, Infra and Data Platforms",
+      "accessibility_score": 75,
+      "api_maturity_score": 90,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free trial",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 70,
+      "name": "Sentry",
+      "category": "Developer, Infra and Data Platforms",
+      "accessibility_score": 93,
+      "api_maturity_score": 87,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 71,
+      "name": "Notion",
+      "category": "Productivity and Project Management",
+      "accessibility_score": 93,
+      "api_maturity_score": 91,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 72,
+      "name": "Airtable",
+      "category": "Productivity and Project Management",
+      "accessibility_score": 93,
+      "api_maturity_score": 66,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Medium",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 73,
+      "name": "Linear",
+      "category": "Productivity and Project Management",
+      "accessibility_score": 93,
+      "api_maturity_score": 94,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 74,
+      "name": "Jira",
+      "category": "Productivity and Project Management",
+      "accessibility_score": 93,
+      "api_maturity_score": 97,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 75,
+      "name": "Asana",
+      "category": "Productivity and Project Management",
+      "accessibility_score": 93,
+      "api_maturity_score": 93,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 76,
+      "name": "Monday.com",
+      "category": "Productivity and Project Management",
+      "accessibility_score": 93,
+      "api_maturity_score": 92,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 77,
+      "name": "ClickUp",
+      "category": "Productivity and Project Management",
+      "accessibility_score": 93,
+      "api_maturity_score": 87,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 78,
+      "name": "Coda",
+      "category": "Productivity and Project Management",
+      "accessibility_score": 89,
+      "api_maturity_score": 69,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Medium",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 79,
+      "name": "Smartsheet",
+      "category": "Productivity and Project Management",
+      "accessibility_score": 49,
+      "api_maturity_score": 88,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Paid-plan required",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 80,
+      "name": "Harvest",
+      "category": "Productivity and Project Management",
+      "accessibility_score": 93,
+      "api_maturity_score": 70,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Medium",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 81,
+      "name": "Stripe",
+      "category": "Finance and Fintech",
+      "accessibility_score": 93,
+      "api_maturity_score": 89,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 82,
+      "name": "Plaid",
+      "category": "Finance and Fintech",
+      "accessibility_score": 35,
+      "api_maturity_score": 93,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Admin approval required",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 83,
+      "name": "Binance",
+      "category": "Finance and Fintech",
+      "accessibility_score": 89,
+      "api_maturity_score": 90,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": false,
+      "confidence": "High"
+    },
+    {
+      "id": 84,
+      "name": "Paygent Connect",
+      "category": "Finance and Fintech",
+      "accessibility_score": 4,
+      "api_maturity_score": 37,
+      "buildability": "Not currently practical",
+      "credential_acquisition": "Unclear / not verified",
+      "api_breadth": "Small",
+      "mcp_status": "Not found",
+      "composio_integration": false,
+      "confidence": "Low"
+    },
+    {
+      "id": 85,
+      "name": "iPayX",
+      "category": "Finance and Fintech",
+      "accessibility_score": 89,
+      "api_maturity_score": 49,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Small",
+      "mcp_status": "Official",
+      "composio_integration": false,
+      "confidence": "Medium"
+    },
+    {
+      "id": 86,
+      "name": "QuickBooks",
+      "category": "Finance and Fintech",
+      "accessibility_score": 89,
+      "api_maturity_score": 96,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 87,
+      "name": "Xero",
+      "category": "Finance and Fintech",
+      "accessibility_score": 89,
+      "api_maturity_score": 92,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 88,
+      "name": "Brex",
+      "category": "Finance and Fintech",
+      "accessibility_score": 35,
+      "api_maturity_score": 67,
+      "buildability": "Partner / enterprise dependent",
+      "credential_acquisition": "Admin approval required",
+      "api_breadth": "Medium",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 89,
+      "name": "Ramp",
+      "category": "Finance and Fintech",
+      "accessibility_score": 35,
+      "api_maturity_score": 93,
+      "buildability": "Partner / enterprise dependent",
+      "credential_acquisition": "Admin approval required",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 90,
+      "name": "PitchBook",
+      "category": "Finance and Fintech",
+      "accessibility_score": 11,
+      "api_maturity_score": 90,
+      "buildability": "Partner / enterprise dependent",
+      "credential_acquisition": "Enterprise-only",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 91,
+      "name": "NotebookLM",
+      "category": "AI, Research and Media-native",
+      "accessibility_score": 11,
+      "api_maturity_score": 41,
+      "buildability": "Partner / enterprise dependent",
+      "credential_acquisition": "Enterprise-only",
+      "api_breadth": "Small",
+      "mcp_status": "Composio integration",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 92,
+      "name": "Otter AI",
+      "category": "AI, Research and Media-native",
+      "accessibility_score": 11,
+      "api_maturity_score": 49,
+      "buildability": "Partner / enterprise dependent",
+      "credential_acquisition": "Enterprise-only",
+      "api_breadth": "Small",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 93,
+      "name": "Fathom",
+      "category": "AI, Research and Media-native",
+      "accessibility_score": 93,
+      "api_maturity_score": 46,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Small",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 94,
+      "name": "Consensus",
+      "category": "AI, Research and Media-native",
+      "accessibility_score": 93,
+      "api_maturity_score": 50,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Small",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 95,
+      "name": "Reducto",
+      "category": "AI, Research and Media-native",
+      "accessibility_score": 93,
+      "api_maturity_score": 67,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Medium",
+      "mcp_status": "Official",
+      "composio_integration": false,
+      "confidence": "High"
+    },
+    {
+      "id": 96,
+      "name": "Devin",
+      "category": "AI, Research and Media-native",
+      "accessibility_score": 53,
+      "api_maturity_score": 93,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Paid-plan required",
+      "api_breadth": "Large",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 97,
+      "name": "Higgsfield",
+      "category": "AI, Research and Media-native",
+      "accessibility_score": 53,
+      "api_maturity_score": 64,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Paid-plan required",
+      "api_breadth": "Medium",
+      "mcp_status": "Composio integration",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 98,
+      "name": "Mermaid CLI",
+      "category": "AI, Research and Media-native",
+      "accessibility_score": 89,
+      "api_maturity_score": 4,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "None / N/A",
+      "mcp_status": "Community-maintained",
+      "composio_integration": false,
+      "confidence": "High"
+    },
+    {
+      "id": 99,
+      "name": "YouTube Transcript",
+      "category": "AI, Research and Media-native",
+      "accessibility_score": 89,
+      "api_maturity_score": 37,
+      "buildability": "Buildable with limitations",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Small",
+      "mcp_status": "Composio integration",
+      "composio_integration": true,
+      "confidence": "High"
+    },
+    {
+      "id": 100,
+      "name": "Grain",
+      "category": "AI, Research and Media-native",
+      "accessibility_score": 93,
+      "api_maturity_score": 66,
+      "buildability": "Ready to build",
+      "credential_acquisition": "Free self-service",
+      "api_breadth": "Medium",
+      "mcp_status": "Official",
+      "composio_integration": true,
+      "confidence": "High"
+    }
+  ],
+  "strategic_buckets": {
+    "quick_wins": [
+      {
+        "id": 14,
+        "name": "Front",
+        "category": "Support and Helpdesk",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": false
+      },
+      {
+        "id": 16,
+        "name": "LiveAgent",
+        "category": "Support and Helpdesk",
+        "credential_acquisition": "Free trial",
+        "api_breadth": "Large",
+        "composio_integration": false
+      },
+      {
+        "id": 30,
+        "name": "Vonage",
+        "category": "Communications and Messaging",
+        "credential_acquisition": "Free trial",
+        "api_breadth": "Large",
+        "composio_integration": false
+      },
+      {
+        "id": 42,
+        "name": "WooCommerce",
+        "category": "Ecommerce",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": false
+      },
+      {
+        "id": 52,
+        "name": "SE Ranking",
+        "category": "Data, SEO and Scraping",
+        "credential_acquisition": "Free trial",
+        "api_breadth": "Large",
+        "composio_integration": false
+      },
+      {
+        "id": 95,
+        "name": "Reducto",
+        "category": "AI, Research and Media-native",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Medium",
+        "composio_integration": false
+      },
+      {
+        "id": 1,
+        "name": "Salesforce",
+        "category": "CRM and Sales",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 2,
+        "name": "HubSpot",
+        "category": "CRM and Sales",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 3,
+        "name": "Pipedrive",
+        "category": "CRM and Sales",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 4,
+        "name": "Attio",
+        "category": "CRM and Sales",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Medium",
+        "composio_integration": true
+      },
+      {
+        "id": 5,
+        "name": "Twenty",
+        "category": "CRM and Sales",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Medium",
+        "composio_integration": true
+      },
+      {
+        "id": 7,
+        "name": "Zoho CRM",
+        "category": "CRM and Sales",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 8,
+        "name": "Close",
+        "category": "CRM and Sales",
+        "credential_acquisition": "Free trial",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 11,
+        "name": "Zendesk",
+        "category": "Support and Helpdesk",
+        "credential_acquisition": "Free trial",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 12,
+        "name": "Intercom",
+        "category": "Support and Helpdesk",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 13,
+        "name": "Freshdesk",
+        "category": "Support and Helpdesk",
+        "credential_acquisition": "Free trial",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 17,
+        "name": "Plain",
+        "category": "Support and Helpdesk",
+        "credential_acquisition": "Free trial",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 18,
+        "name": "Help Scout",
+        "category": "Support and Helpdesk",
+        "credential_acquisition": "Free trial",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 19,
+        "name": "Gorgias",
+        "category": "Support and Helpdesk",
+        "credential_acquisition": "Free trial",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 21,
+        "name": "Slack",
+        "category": "Communications and Messaging",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 22,
+        "name": "Twilio",
+        "category": "Communications and Messaging",
+        "credential_acquisition": "Free trial",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 23,
+        "name": "Zoho Cliq",
+        "category": "Communications and Messaging",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 26,
+        "name": "Discord",
+        "category": "Communications and Messaging",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 27,
+        "name": "Telegram",
+        "category": "Communications and Messaging",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 35,
+        "name": "Mailchimp",
+        "category": "Marketing, Ads, Email and Social",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 36,
+        "name": "Klaviyo",
+        "category": "Marketing, Ads, Email and Social",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 40,
+        "name": "SendGrid",
+        "category": "Marketing, Ads, Email and Social",
+        "credential_acquisition": "Free trial",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 41,
+        "name": "Shopify",
+        "category": "Ecommerce",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 43,
+        "name": "BigCommerce",
+        "category": "Ecommerce",
+        "credential_acquisition": "Free trial",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 48,
+        "name": "Gumroad",
+        "category": "Ecommerce",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Medium",
+        "composio_integration": true
+      },
+      {
+        "id": 51,
+        "name": "DataForSEO",
+        "category": "Data, SEO and Scraping",
+        "credential_acquisition": "Free trial",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 54,
+        "name": "MrScraper",
+        "category": "Data, SEO and Scraping",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Medium",
+        "composio_integration": true
+      },
+      {
+        "id": 55,
+        "name": "Apify",
+        "category": "Data, SEO and Scraping",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 56,
+        "name": "Firecrawl",
+        "category": "Data, SEO and Scraping",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 57,
+        "name": "Bright Data",
+        "category": "Data, SEO and Scraping",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 61,
+        "name": "GitHub",
+        "category": "Developer, Infra and Data Platforms",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 62,
+        "name": "Vercel",
+        "category": "Developer, Infra and Data Platforms",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 63,
+        "name": "Netlify",
+        "category": "Developer, Infra and Data Platforms",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Medium",
+        "composio_integration": true
+      },
+      {
+        "id": 64,
+        "name": "Cloudflare",
+        "category": "Developer, Infra and Data Platforms",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 65,
+        "name": "Supabase",
+        "category": "Developer, Infra and Data Platforms",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 66,
+        "name": "Neo4j",
+        "category": "Developer, Infra and Data Platforms",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Medium",
+        "composio_integration": true
+      },
+      {
+        "id": 69,
+        "name": "Datadog",
+        "category": "Developer, Infra and Data Platforms",
+        "credential_acquisition": "Free trial",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 70,
+        "name": "Sentry",
+        "category": "Developer, Infra and Data Platforms",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 71,
+        "name": "Notion",
+        "category": "Productivity and Project Management",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 72,
+        "name": "Airtable",
+        "category": "Productivity and Project Management",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Medium",
+        "composio_integration": true
+      },
+      {
+        "id": 73,
+        "name": "Linear",
+        "category": "Productivity and Project Management",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 74,
+        "name": "Jira",
+        "category": "Productivity and Project Management",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 75,
+        "name": "Asana",
+        "category": "Productivity and Project Management",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 76,
+        "name": "Monday.com",
+        "category": "Productivity and Project Management",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 77,
+        "name": "ClickUp",
+        "category": "Productivity and Project Management",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 80,
+        "name": "Harvest",
+        "category": "Productivity and Project Management",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Medium",
+        "composio_integration": true
+      },
+      {
+        "id": 81,
+        "name": "Stripe",
+        "category": "Finance and Fintech",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 100,
+        "name": "Grain",
+        "category": "AI, Research and Media-native",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Medium",
+        "composio_integration": true
+      }
+    ],
+    "white_space_quick_wins": [
+      {
+        "id": 14,
+        "name": "Front",
+        "category": "Support and Helpdesk",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large"
+      },
+      {
+        "id": 16,
+        "name": "LiveAgent",
+        "category": "Support and Helpdesk",
+        "credential_acquisition": "Free trial",
+        "api_breadth": "Large"
+      },
+      {
+        "id": 30,
+        "name": "Vonage",
+        "category": "Communications and Messaging",
+        "credential_acquisition": "Free trial",
+        "api_breadth": "Large"
+      },
+      {
+        "id": 42,
+        "name": "WooCommerce",
+        "category": "Ecommerce",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large"
+      },
+      {
+        "id": 52,
+        "name": "SE Ranking",
+        "category": "Data, SEO and Scraping",
+        "credential_acquisition": "Free trial",
+        "api_breadth": "Large"
+      },
+      {
+        "id": 95,
+        "name": "Reducto",
+        "category": "AI, Research and Media-native",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Medium"
+      }
+    ],
+    "conditional_wins": [
+      {
+        "id": 6,
+        "name": "Podio",
+        "category": "CRM and Sales",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 9,
+        "name": "Copper",
+        "category": "CRM and Sales",
+        "credential_acquisition": "Paid-plan required",
+        "api_breadth": "Medium",
+        "composio_integration": true
+      },
+      {
+        "id": 24,
+        "name": "Lark",
+        "category": "Communications and Messaging",
+        "credential_acquisition": "Admin approval required",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 25,
+        "name": "Pumble",
+        "category": "Communications and Messaging",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Small",
+        "composio_integration": true
+      },
+      {
+        "id": 28,
+        "name": "WhatsApp Business",
+        "category": "Communications and Messaging",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 29,
+        "name": "Aircall",
+        "category": "Communications and Messaging",
+        "credential_acquisition": "Free trial",
+        "api_breadth": "Medium",
+        "composio_integration": true
+      },
+      {
+        "id": 31,
+        "name": "Google Ads",
+        "category": "Marketing, Ads, Email and Social",
+        "credential_acquisition": "Admin approval required",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 32,
+        "name": "Meta Ads",
+        "category": "Marketing, Ads, Email and Social",
+        "credential_acquisition": "Admin approval required",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 37,
+        "name": "systeme.io",
+        "category": "Marketing, Ads, Email and Social",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Medium",
+        "composio_integration": false
+      },
+      {
+        "id": 38,
+        "name": "Pinterest",
+        "category": "Marketing, Ads, Email and Social",
+        "credential_acquisition": "Admin approval required",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 39,
+        "name": "Threads",
+        "category": "Marketing, Ads, Email and Social",
+        "credential_acquisition": "Admin approval required",
+        "api_breadth": "Medium",
+        "composio_integration": true
+      },
+      {
+        "id": 45,
+        "name": "Magento",
+        "category": "Ecommerce",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": false
+      },
+      {
+        "id": 46,
+        "name": "Squarespace",
+        "category": "Ecommerce",
+        "credential_acquisition": "Paid-plan required",
+        "api_breadth": "Medium",
+        "composio_integration": false
+      },
+      {
+        "id": 47,
+        "name": "Ecwid",
+        "category": "Ecommerce",
+        "credential_acquisition": "Paid-plan required",
+        "api_breadth": "Large",
+        "composio_integration": false
+      },
+      {
+        "id": 50,
+        "name": "Fanbasis",
+        "category": "Ecommerce",
+        "credential_acquisition": "Admin approval required",
+        "api_breadth": "Medium",
+        "composio_integration": false
+      },
+      {
+        "id": 53,
+        "name": "Ahrefs",
+        "category": "Data, SEO and Scraping",
+        "credential_acquisition": "Paid-plan required",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 60,
+        "name": "Clay",
+        "category": "Data, SEO and Scraping",
+        "credential_acquisition": "Free trial",
+        "api_breadth": "Medium",
+        "composio_integration": true
+      },
+      {
+        "id": 67,
+        "name": "Snowflake",
+        "category": "Developer, Infra and Data Platforms",
+        "credential_acquisition": "Free trial",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 68,
+        "name": "MongoDB Atlas",
+        "category": "Developer, Infra and Data Platforms",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 78,
+        "name": "Coda",
+        "category": "Productivity and Project Management",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Medium",
+        "composio_integration": true
+      },
+      {
+        "id": 79,
+        "name": "Smartsheet",
+        "category": "Productivity and Project Management",
+        "credential_acquisition": "Paid-plan required",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 82,
+        "name": "Plaid",
+        "category": "Finance and Fintech",
+        "credential_acquisition": "Admin approval required",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 83,
+        "name": "Binance",
+        "category": "Finance and Fintech",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": false
+      },
+      {
+        "id": 85,
+        "name": "iPayX",
+        "category": "Finance and Fintech",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Small",
+        "composio_integration": false
+      },
+      {
+        "id": 86,
+        "name": "QuickBooks",
+        "category": "Finance and Fintech",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 87,
+        "name": "Xero",
+        "category": "Finance and Fintech",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 99,
+        "name": "YouTube Transcript",
+        "category": "AI, Research and Media-native",
+        "credential_acquisition": "Free self-service",
+        "api_breadth": "Small",
+        "composio_integration": true
+      }
+    ],
+    "partnership_opportunities": [
+      {
+        "id": 10,
+        "name": "DealCloud",
+        "category": "CRM and Sales",
+        "credential_acquisition": "Enterprise-only",
+        "api_breadth": "Large",
+        "composio_integration": false
+      },
+      {
+        "id": 15,
+        "name": "Pylon",
+        "category": "Support and Helpdesk",
+        "credential_acquisition": "Partner / contact-sales gated",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 20,
+        "name": "Gladly",
+        "category": "Support and Helpdesk",
+        "credential_acquisition": "Partner / contact-sales gated",
+        "api_breadth": "Medium",
+        "composio_integration": false
+      },
+      {
+        "id": 33,
+        "name": "LinkedIn Ads",
+        "category": "Marketing, Ads, Email and Social",
+        "credential_acquisition": "Partner / contact-sales gated",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 44,
+        "name": "Salesforce Commerce Cloud",
+        "category": "Ecommerce",
+        "credential_acquisition": "Enterprise-only",
+        "api_breadth": "Large",
+        "composio_integration": false
+      },
+      {
+        "id": 49,
+        "name": "Amazon Selling Partner",
+        "category": "Ecommerce",
+        "credential_acquisition": "Admin approval required",
+        "api_breadth": "Large",
+        "composio_integration": false
+      },
+      {
+        "id": 59,
+        "name": "Waterfall.io",
+        "category": "Data, SEO and Scraping",
+        "credential_acquisition": "Partner / contact-sales gated",
+        "api_breadth": "Medium",
+        "composio_integration": false
+      },
+      {
+        "id": 88,
+        "name": "Brex",
+        "category": "Finance and Fintech",
+        "credential_acquisition": "Admin approval required",
+        "api_breadth": "Medium",
+        "composio_integration": true
+      },
+      {
+        "id": 89,
+        "name": "Ramp",
+        "category": "Finance and Fintech",
+        "credential_acquisition": "Admin approval required",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 90,
+        "name": "PitchBook",
+        "category": "Finance and Fintech",
+        "credential_acquisition": "Enterprise-only",
+        "api_breadth": "Large",
+        "composio_integration": true
+      },
+      {
+        "id": 91,
+        "name": "NotebookLM",
+        "category": "AI, Research and Media-native",
+        "credential_acquisition": "Enterprise-only",
+        "api_breadth": "Small",
+        "composio_integration": true
+      },
+      {
+        "id": 92,
+        "name": "Otter AI",
+        "category": "AI, Research and Media-native",
+        "credential_acquisition": "Enterprise-only",
+        "api_breadth": "Small",
+        "composio_integration": true
+      }
+    ],
+    "difficult_integrations": [
+      {
+        "id": 58,
+        "name": "Sherlock",
+        "category": "Data, SEO and Scraping",
+        "api_availability": "No documented public API",
+        "buildability": "Buildable with limitations"
+      },
+      {
+        "id": 84,
+        "name": "Paygent Connect",
+        "category": "Finance and Fintech",
+        "api_availability": "REST",
+        "buildability": "Not currently practical"
+      },
+      {
+        "id": 98,
+        "name": "Mermaid CLI",
+        "category": "AI, Research and Media-native",
+        "api_availability": "No documented public API",
+        "buildability": "Buildable with limitations"
+      },
+      {
+        "id": 99,
+        "name": "YouTube Transcript",
+        "category": "AI, Research and Media-native",
+        "api_availability": "SDK-only",
+        "buildability": "Buildable with limitations"
+      }
+    ]
+  },
+  "executive_insights": [
+    {
+      "id": "insight_1",
+      "title": "Documentation Maturity Masks Commercial Credential Friction",
+      "metric": "17 of 68 Large-API apps (25.0%)",
+      "summary": "17 applications with Large, well-documented APIs still gate production credentials behind paid plans, mandatory app/KYB reviews, or enterprise contracts \u2014 including DealCloud, Pylon, Lark, Google Ads, Meta Ads, LinkedIn Ads. Across all 100 apps, 27% require paid plans, admin/app approval, or sales/enterprise gating despite 98% having public APIs.",
+      "business_implication": "Separate technical schema generation from credential-provisioning UX: invest in managed OAuth apps, pre-approved partner reviews (Google Ads, Meta Ads, LinkedIn Ads, Amazon SP-API), and BYO-credential flows for enterprise tenants."
+    },
+    {
+      "id": "insight_2",
+      "title": "First-Party MCP Adoption Has Crossed the Tipping Point \u2014 Shifting Composio's Moat to Auth & Parity",
+      "metric": "81% Official + 2% Vendor-Supported MCPs",
+      "summary": "81 platforms ship official first-party MCP servers and 2 ship vendor-supported sample/beta MCPs (Twilio, Amazon SP-API), while Composio has verified dedicated toolkits for 79/100 (79%). Many vendor MCPs remain read-only, beta-gated, or lack Dynamic Client Registration (Help Scout, Aircall, DealCloud, Front, Copper).",
+      "business_implication": "Wrapping raw endpoints is no longer a durable moat. Composio's differentiation lies in unified multi-tenant OAuth/token lifecycle management, full write-action parity where vendor MCPs are read-only, and cross-app session orchestration."
+    },
+    {
+      "id": "insight_3",
+      "title": "OAuth 2.0 Dominates Multi-Tenant Readiness, While Dual-Auth Splits Dev vs. Production",
+      "metric": "77% OAuth 2.0 | 62% API Key (41% both)",
+      "summary": "77 apps support OAuth 2.0 and 62 support API keys, with 41 offering both. Category auth patterns diverge sharply: Developer/Infra and Productivity combine OAuth + PATs for self-service onboarding, whereas Ad Networks enforce strict OAuth-only multi-stage review.",
+      "business_implication": "Standardizing OAuth 2.0 + PKCE with automatic token refresh and regional domain routing (Zoho, Datadog, Pylon, Smartsheet) unlocks the largest addressable integration footprint with minimal per-app auth engineering."
+    },
+    {
+      "id": "insight_4",
+      "title": "Category Readiness Bifurcates Sharply Between Developer/Productivity and Fintech/AI-Native",
+      "metric": "Support and Helpdesk (8/10 Ready) vs. Finance and Fintech (1/10 Ready)",
+      "summary": "Support and Helpdesk leads with 8/10 apps Ready to build and 2/10 offering Free self-service credentials, whereas Finance and Fintech has only 1/10 Ready to build due to KYB underwriting, enterprise gating, or non-standard surfaces.",
+      "business_implication": "Prioritize rapid toolkit expansion in high-velocity self-service categories (Dev/Infra, Productivity, Support, SEO/Scraping) while assigning dedicated partner-engineering pods to Fintech and Ad-Tech verticals."
+    },
+    {
+      "id": "insight_5",
+      "title": "6 High-Readiness 'White-Space' Quick Wins Lack Dedicated Composio Toolkits",
+      "metric": "6 Ready-to-build white-space apps",
+      "summary": "Out of 53 Ready-to-build apps with Medium/Large APIs and Free/Trial access, 6 do not yet have a verified dedicated Composio toolkit: Front, LiveAgent, Vonage, WooCommerce, SE Ranking, Reducto. All have mature public APIs and clear documentation.",
+      "business_implication": "Shipping these white-space toolkits first delivers the fastest ROI per engineering week, immediately closing catalog gaps in Support (Front, LiveAgent), Communications (Vonage), Ecommerce (WooCommerce), SEO (SE Ranking), and AI Document Parsing (Reducto)."
+    }
+  ],
+  "accuracy_metrics": {
+    "total_apps_in_scope": 100,
+    "apps_researched": 100,
+    "evidence_coverage_pct": 100.0,
+    "unknown_unresolved_rate_pct": 0.43,
+    "audited_sample_size": 20,
+    "evaluated_fields_per_app": 7,
+    "total_evaluated_fields": 140,
+    "first_pass": {
+      "stage": "first_pass",
+      "total_evaluated_fields": 140,
+      "correct": 132,
+      "partially_correct": 1,
+      "incorrect": 4,
+      "unresolved": 3,
+      "accuracy_pct": 94.3
+    },
+    "post_validation": {
+      "stage": "post_validation",
+      "total_evaluated_fields": 140,
+      "correct": 133,
+      "partially_correct": 1,
+      "incorrect": 3,
+      "unresolved": 3,
+      "accuracy_pct": 95.0
+    },
+    "final_audited": {
+      "stage": "final_audited",
+      "total_evaluated_fields": 140,
+      "correct": 137,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "unresolved": 3,
+      "accuracy_pct": 97.9
+    },
+    "false_positives": 4,
+    "false_negatives": 1,
+    "evaluation_denominator_definition": "20 stratified apps (2 per category across all 10 categories) x 7 core fields (auth_methods, credential_acquisition, api_availability, api_breadth, mcp_status, composio_integration, buildability) = 140 evaluated fields. Strict rule: only 'Correct' counts toward accuracy; 'Partially correct', 'Incorrect', and 'Unresolved'/'Unknown' fields count as 0 correct.",
+    "field_error_breakdown_pass1": {
+      "auth_methods": 4,
+      "credential_acquisition": 1,
+      "api_availability": 0,
+      "api_breadth": 0,
+      "mcp_status": 1,
+      "composio_integration": 1,
+      "buildability": 1
+    },
+    "field_error_breakdown_final": {
+      "auth_methods": 2,
+      "credential_acquisition": 1,
+      "api_availability": 0,
+      "api_breadth": 0,
+      "mcp_status": 0,
+      "composio_integration": 0,
+      "buildability": 0
+    }
+  },
+  "execution_metadata": {
+    "pipeline_mode": "deterministic_dataset_replay",
+    "search_provider_configured": "duckduckgo_html",
+    "replay_log_entries": 461,
+    "live_http_retrieval_entries": 0,
+    "active_log_file": "data/replay_log.jsonl",
+    "composio_provider": {
+      "execution_status": "not_executed",
+      "sdk_initialized": false,
+      "session_created": false,
+      "toolkit_tool_invoked": false,
+      "invoked_tool_slug": null,
+      "live_tool_verified": false,
+      "sdk_target": "composio>=0.34.0 (v3 Sessions API) + composio-gemini",
+      "mcp_gateway": "https://connect.composio.dev/mcp",
+      "last_invocation_result": null,
+      "reason": "COMPOSIO_API_KEY not set in environment"
+    }
+  }
+}
